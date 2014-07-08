@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Holotree Starter Plugin
+Plugin Name: Gus UI Mods
 Plugin URI: http://add-on-site.com/
 Description: Description
 Version: 0.0.1
 Author: Your Name
 Author URI: http://your-site.com/
-Text Domain: holotree-addon-starter
+Text Domain: gus-ui-mods
 License: GPL v2 or later
 */
 
@@ -44,23 +44,23 @@ if ( !defined( 'ABSPATH' ) ) exit;
  *
  * @since 0.0.1
  */
-define( 'HOLOTREE_EXTEND_SLUG', plugin_basename( __FILE__ ) );
-define( 'HOLOTREE_EXTEND_URL', plugin_dir_url( __FILE__ ) );
-define( 'HOLOTREE_EXTEND_DIR', plugin_dir_path( __FILE__ ) );
+define( 'GUS_UI_MODS_SLUG', plugin_basename( __FILE__ ) );
+define( 'GUS_UI_MODS_URL', plugin_dir_url( __FILE__ ) );
+define( 'GUS_UI_MODS_DIR', plugin_dir_path( __FILE__ ) );
 
 /**
  *	Safely Activate The Main Class For This plugin
  *
- * @return holotree_addon_starter
+ * @return gus_ui_mods
  */
-function holotree_addon_starter_safe_activate() {
+function gus_ui_mods_safe_activate() {
 	if ( defined( HT_VERSION ) ) {
-		include_once( 'holotree_addon_starter' );
-		$class = new holotree_addon_starter(
-			holotree_addon_starter_info(),
-			holotree_addon_starter_css(),
-			holotree_addon_starter_js(),
-			holotree_addon_starter_hooks(),
+		include_once( 'gus_ui_mods' );
+		$class = new gus_ui_mods(
+			gus_ui_mods_info(),
+			gus_ui_mods_css(),
+			gus_ui_mods_js(),
+			gus_ui_mods_hooks(),
 			null,
 		);
 
@@ -75,10 +75,10 @@ function holotree_addon_starter_safe_activate() {
  *
  * @return array
  */
-function holotree_addon_starter_info() {
+function gus_ui_mods_info() {
 	return array(
 		'name' 		=> 'HoloTree Addon Starter',
-		'slug' 		=> 'holotree-addon-starter',
+		'slug' 		=> 'gus-ui-mods',
 		'author'  	=> 'Your Name',
 		'authorURI' => 'http://your-site.com/',
 		'URI'		=> 'http://add-on-site.com/',
@@ -95,9 +95,9 @@ function holotree_addon_starter_info() {
  *
  * @return array
  */
-function holotree_addon_starter_css() {
+function gus_ui_mods_css() {
 	return array(
-		'holotree-addon-starter' => 'holotree-addon-starter.css',
+		'gus-ui-mods' => 'gus-ui-mods.css',
 
 	);
 }
@@ -110,10 +110,10 @@ function holotree_addon_starter_css() {
  *
  * @return array
  */
-function holotree_addon_starter_js() {
+function gus_ui_mods_js() {
 	return array(
 		'name' => array(
-			'path' 			=> 'holotree-addon-starter.js',
+			'path' 			=> 'gus-ui-mods.js',
 			'dependencies' 	=> 'jquery',
 			'in_footer'		=> 'true',
 		),
@@ -129,7 +129,7 @@ function holotree_addon_starter_js() {
  *
  * @return array
  */
-function holotree_addon_starter_hooks() {
+function gus_ui_mods_hooks() {
 	return array(
 		'action' => array(
 			'hook' 		=> 'init',

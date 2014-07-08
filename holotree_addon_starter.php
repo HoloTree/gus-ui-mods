@@ -9,6 +9,6 @@
  * @copyright 2014 Josh Pollock
  */
 
-class holotree_addon_starter extends holotree\addon\addon_base {
+class gus_ui_mods extends holotree\addon\addon_base {
 
 } 
