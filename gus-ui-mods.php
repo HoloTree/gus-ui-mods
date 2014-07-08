@@ -132,16 +132,26 @@ function gus_ui_mods_js() {
 function gus_ui_mods_hooks() {
 	return array(
 		'action' => array(
-			'hook' 		=> 'init',
-			'callback' 	=> 'callback_function',
-			'priority' 	=> 1,
-			'args'  	=> 2,
+			'hook' 		=> 'wp_enqueue_scripts',
+			'callback' 	=> array( gus_ui_mods_setup::init(), 'deregister_app_starter_scripts'),
+			'priority' 	=> 23,
+			'args'  	=> 1,
 		),
-		'filter' => array(
-			'hook' 		=> 'the_content',
-			'callback'	=> 'content_callback',
-			'priority'	=> 21,
-			'args'		=> 1,
 	);
 
 }
+
+/**
+ * Include and return the setup class
+ *
+ * @return object
+ */
+add_action( 'plugins_loaded', 'gus_ui_mods_setup' );
+function gus_ui_mods_setup() {
+	include_once( 'gus_ui_mods_setup.php' );
+
+	return gus_ui_mods_setup::init();
+
+}
+
+
