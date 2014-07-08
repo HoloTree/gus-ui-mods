@@ -60,7 +60,8 @@ function holotree_addon_starter_safe_activate() {
 			holotree_addon_starter_info(),
 			holotree_addon_starter_css(),
 			holotree_addon_starter_js(),
-			null
+			holotree_addon_starter_hooks(),
+			null,
 		);
 
 		return $class;
@@ -118,5 +119,29 @@ function holotree_addon_starter_js() {
 		),
 
 	);
+
 }
 
+/**
+ * Set the hooks for this addon.
+ *
+ * Will be passed to add_action() or add_filter()
+ *
+ * @return array
+ */
+function holotree_addon_starter_hooks() {
+	return array(
+		'action' => array(
+			'hook' 		=> 'init',
+			'callback' 	=> 'callback_function',
+			'priority' 	=> 1,
+			'args'  	=> 2,
+		),
+		'filter' => array(
+			'hook' 		=> 'the_content',
+			'callback'	=> 'content_callback',
+			'priority'	=> 21,
+			'args'		=> 1,
+	);
+
+}
