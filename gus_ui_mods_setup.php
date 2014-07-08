@@ -17,7 +17,8 @@ class gus_ui_mods_setup {
 		add_filter( 'ht_gus_ui_mods_enqueue_scripts_priority', function(){
 			return 99;
 		});
-		add_action( 'wp_enqueue_scripts', array( $this, 'deregister_app_starter_scripts' ), 21 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'deregister_app_starter_scripts' ), 23 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'scripts_styles' ), 25 );
 
 	}
 
@@ -30,6 +31,12 @@ class gus_ui_mods_setup {
 		wp_deregister_script( 'foundation' );
 		wp_deregister_style( 'app_starter-style' );
 
+
+	}
+
+	function scripts_styles() {
+		wp_enqueue_script( 'gus', plugin_dir_url( 'css/gus.css', __FILE__) );
+		wp_register_script( 'gus', plugin_dir_url( 'js/gus.js', __FILE__ ), array( 'jquery' ), false, true );
 
 	}
 
