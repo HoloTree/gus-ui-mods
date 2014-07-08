@@ -1,0 +1,19 @@
+{
+    "name": "holotree/holotree_addon_starter",
+    "description": "Starter Plugin For HoloTree Addons",
+    "keywords": ["wordpress", "plugin", "holotree"],
+    "homepage": "http://add-on-site.com/",
+    "license": "GPL v2+",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "Your Email",
+            "homepage": "http://your-site.com/"
+        }
+    ],
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=5.3.2",
+        "composer/installers": "v1.0.6"
+    }
+}
