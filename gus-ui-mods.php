@@ -49,24 +49,40 @@ define( 'GUS_UI_MODS_URL', plugin_dir_url( __FILE__ ) );
 define( 'GUS_UI_MODS_DIR', plugin_dir_path( __FILE__ ) );
 
 /**
- *	Safely Activate The Main Class For This plugin
+ * Add this add-on to the possible add-ons
+ */
+add_filter( 'ht_registered_addons', function( $addons ){
+	$addons[] = array(
+		'gus-ui-mods' =>
+			array(
+			   'class' 	=> gus_ui_mods_setup::init(),
+			   'method' => 'activate',
+			)
+	);
+
+	return $addons;
+
+});
+
+/**
+ *
  *
  * @return gus_ui_mods
  */
-function gus_ui_mods_safe_activate() {
-	if ( defined( HT_VERSION ) ) {
-		include_once( 'gus_ui_mods' );
+function gus_ui_mods_activate() {
+
+		include_once( 'gus_ui_mods.php' );
 		$class = new gus_ui_mods(
 			gus_ui_mods_info(),
 			gus_ui_mods_css(),
 			gus_ui_mods_js(),
 			gus_ui_mods_hooks(),
-			null,
+			null
 		);
 
 		return $class;
 
-	}
+
 
 }
 
@@ -130,6 +146,7 @@ function gus_ui_mods_js() {
  * @return array
  */
 function gus_ui_mods_hooks() {
+	return;
 	return array(
 		'action' => array(
 			'hook' 		=> 'wp_enqueue_scripts',
