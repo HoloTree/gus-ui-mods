@@ -13,30 +13,20 @@ class gus_ui_mods_setup {
 
 
 	function __construct() {
+
 		//load the main js and ccs for this addon late
 		add_filter( 'ht_gus_ui_mods_enqueue_scripts_priority', function(){
 			return 99;
 		});
-		add_action( 'wp_enqueue_scripts', array( $this, 'deregister_app_starter_scripts' ), 23 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'scripts_styles' ), 25 );
 
-	}
-
-	/**
-	 * Remove app_starter's js and css
-	 */
-	function deregister_app_starter_scripts() {
-
-		wp_deregister_script( 'app-starter' );
-		wp_deregister_script( 'foundation' );
-		wp_deregister_style( 'app_starter-style' );
-
-
+		add_filter( 'app_starter_use_main_css', '__return_false' );
+		add_filter( 'app_starter_use_main_js', '__return_false' );
 	}
 
 	function scripts_styles() {
-		wp_enqueue_script( 'gus', plugin_dir_url( 'css/gus.css', __FILE__) );
-		wp_register_script( 'gus', plugin_dir_url( 'js/gus.js', __FILE__ ), array( 'jquery' ), false, true );
+		wp_enqueue_style( 'gus', trailingslashit( GUS_UI_MODS_URL) . 'css/gus.css' );
+		wp_enqueue_script( 'gus', trailingslashit( GUS_UI_MODS_URL) . 'js/gus.min.js', array( 'jquery' ), false, true );
 
 	}
 
