@@ -61,7 +61,7 @@ function holotree_addon_starter_safe_activate() {
 			holotree_addon_starter_css(),
 			holotree_addon_starter_js(),
 			holotree_addon_starter_hooks(),
-			null,
+			null
 		);
 
 		return $class;
@@ -142,6 +142,7 @@ function holotree_addon_starter_hooks() {
 			'callback'	=> 'content_callback',
 			'priority'	=> 21,
 			'args'		=> 1,
+		),
 	);
 
 }
