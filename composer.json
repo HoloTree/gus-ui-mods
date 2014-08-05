@@ -9,6 +9,10 @@
             "name": "Josh Pollock",
             "email": "Josh@JoshPress.net",
             "homepage": "http://JoshPress.net/"
+        },
+        {
+            "name": "Jonathan James",
+            "email": "jaymjames@me.com"
         }
     ],
     "type": "wordpress-plugin",
