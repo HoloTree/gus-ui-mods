@@ -1,0 +1,74 @@
+
+//normalize
+@import "../../../../vendor/zurb/foundation/scss/normalize";
+
+// Global Foundation Settings
+@import "../../../../vendor/zurb/foundation/scss/foundation/functions";
+@import "foundation/settings";
+
+//sassy_s
+@import "sassy_s/sassy_s";
+
+
+//foundation
+@import
+"../../../../vendor/zurb/foundation/scss/foundation/components/grid",
+"../../../../vendor/zurb/foundation/scss/foundation/components/accordion",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/alert-boxes",
+"../../../../vendor/zurb/foundation/scss/foundation/components/block-grid",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/breadcrumbs",
+"../../../../vendor/zurb/foundation/scss/foundation/components/button-groups",
+"../../../../vendor/zurb/foundation/scss/foundation/components/buttons",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/clearing",
+"../../../../vendor/zurb/foundation/scss/foundation/components/dropdown",
+"../../../../vendor/zurb/foundation/scss/foundation/components/dropdown-buttons",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/flex-video",
+"../../../../vendor/zurb/foundation/scss/foundation/components/forms",
+"../../../../vendor/zurb/foundation/scss/foundation/components/inline-lists",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/joyride",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/keystrokes",
+"../../../../vendor/zurb/foundation/scss/foundation/components/labels",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/magellan",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/orbit",
+"../../../../vendor/zurb/foundation/scss/foundation/components/pagination",
+"../../../../vendor/zurb/foundation/scss/foundation/components/panels",
+"../../../../vendor/zurb/foundation/scss/foundation/components/pricing-tables",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/progress-bars",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/range-slider",
+"../../../../vendor/zurb/foundation/scss/foundation/components/reveal",
+"../../../../vendor/zurb/foundation/scss/foundation/components/side-nav",
+"../../../../vendor/zurb/foundation/scss/foundation/components/split-buttons",
+"../../../../vendor/zurb/foundation/scss/foundation/components/sub-nav",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/switch",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/tables",
+"../../../../vendor/zurb/foundation/scss/foundation/components/tabs",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/thumbs",
+"../../../../vendor/zurb/foundation/scss/foundation/components/tooltips",
+"../../../../vendor/zurb/foundation/scss/foundation/components/top-bar",
+  //"../../../../vendor/zurb/foundation/scss/foundation/components/type",
+"../../../../vendor/zurb/foundation/scss/foundation/components/offcanvas",
+"../../../../vendor/zurb/foundation/scss/foundation/components/visibility";
+
+
+.row { max-width: 98%; }
+
+h1.site-title a, h1.site-title a:visited { color: $tabbar-header-color;}
+
+.left-off-canvas-menu ul, .right-off-canvas-menu ul {
+  padding-top: 24px;
+  list-style: none;
+  a { color: $secondary-color;}
+
+}
+
+#comments {
+  padding-top: 48px;
+}
+
+h1.widget-title {
+  font-size: 2rem;
+}
+
+.offcanvas-widget-area {
+  padding: 24px 16px;
+}

@@ -1,3 +1,11 @@
+/**
+ * Gus UI
+ * http://holotree.com
+ *
+ * Copyright (c) 2014 Josh Pollock
+ * Licensed under the GPLv2+ license.
+ */
+
 jQuery(document).ready(function($) {
     //init foundation
     $(document).foundation();

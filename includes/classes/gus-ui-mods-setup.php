@@ -1,14 +1,4 @@
 <?php
-/**
- * @TODO What this does.
- *
- * @package   @TODO
- * @author    Josh Pollock <Josh@JoshPress.net>
- * @license   GPL-2.0+
- * @link      
- * @copyright 2014 Josh Pollock
- */
-
 class gus_ui_mods_setup {
 
 
@@ -25,23 +15,23 @@ class gus_ui_mods_setup {
 	}
 
 	function scripts_styles() {
-		wp_enqueue_style( 'gus', trailingslashit( GUS_UI_MODS_URL) . 'css/gus.css' );
-		wp_enqueue_script( 'gus', trailingslashit( GUS_UI_MODS_URL) . 'js/gus.min.js', array( 'jquery' ), false, true );
+		wp_enqueue_style( 'gus', trailingslashit( GUS_UI_URL) . 'assets/css/gus_ui.min.css' );
+		wp_enqueue_script( 'gus', trailingslashit( GUS_UI_URL) . 'assets/js/gus_ui.min.js', array( 'jquery', 'foundation' ), GUS_UI_VERSION, true );
+		$url = trailingslashit( GUS_UI_URL ).'vendor/zurb/foundation/js/foundation/';
+
+		//@todo minify foundation
+		wp_enqueue_script( 'foundation', $url.'foundation.js', array( 'jquery' ), GUS_UI_VERSION, true );
+		foreach( $this->foundation() as $name ) {
+			$file = $url.'foundation.'.$name.'.js';
+			wp_enqueue_script( $name, $file, array( 'jquery', 'foundation' ), GUS_UI_VERSION, true );
+		}
 
 	}
 
-	function activate() {
-		include_once( 'gus_ui_mods.php' );
-		$class = new gus_ui_mods(
-			gus_ui_mods_info(),
-			gus_ui_mods_css(),
-			gus_ui_mods_js(),
-			gus_ui_mods_hooks(),
-			null
-		);
-
-		return $class;
+	function foundation() {
+		return array( 'accordion', 'offcanvas', 'tab', 'alert' );
 	}
+
 
 
 	/**
@@ -69,4 +59,4 @@ class gus_ui_mods_setup {
 		return self::$instance;
 
 	}
-} 
+}
