@@ -72,11 +72,13 @@ function gus_ui_deactivate() {
 }
 register_deactivation_hook( __FILE__, 'gus_ui_deactivate' );
 
-// Wireup actions
+//init
 add_action( 'init', 'gus_ui_init' );
 
+//vertical tabs
+add_filter( 'ht_dms_foundation_vertical_tabs', '__return_true' );
 
-
+//load
 add_action( 'plugins_loaded', 'gus_ui_mods_load' );
 function gus_ui_mods_load() {
 	if (  defined( 'HT_VERSION' ) ) {
