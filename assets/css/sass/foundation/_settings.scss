@@ -53,12 +53,12 @@
 // $default-float: left;
 
 // We use these as default colors throughout
- $primary-color: #000;
- $secondary-color: #e7e7e7;
- $links-color: #4169E1;
- $alert-color: #f04124;
- $success-color: #43AC6A;
- $warning-color: #f08a24;
+ $primary-color: $primary;
+ $secondary-color: $background;
+ $links-color: $complement;
+ $alert-color: $accent;
+ $success-color: $accentShade;
+ $warning-color: $accentTint;
  $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
