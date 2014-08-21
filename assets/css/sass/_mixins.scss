@@ -12,10 +12,18 @@
   @include borders( $color, $width, 5px );
 }
 
+@mixin ht-border( $color ) {
+  @include border-square( $color, 1px );
+}
+
 @mixin accent-border() {
-  @include border-square( $accent, 1px );
+  @include ht-border( $accent );
 }
 
 @mixin complement-border() {
-  @include border-square( $complement, 1px );
+  @include ht-border( $complement );
+}
+
+@mixin highlight-border() {
+  @include ht-border( $highlight );
 }

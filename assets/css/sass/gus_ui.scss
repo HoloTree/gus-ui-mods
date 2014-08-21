@@ -83,9 +83,13 @@ a {
 }
 
 #holotree-dms {
-
+  @include accent-border;
 }
 
-#title-section{
+#holotree-dms-title-section{
+  @include complement-border;
+}
 
+#holotree-dms-content {
+  @include complement-border;
 }

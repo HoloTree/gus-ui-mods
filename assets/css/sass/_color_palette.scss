@@ -2,24 +2,25 @@ $primary:#000;
 $secondary: #e7e7e7;
 $background: #e7e7e7;
 $accent: #4169E1;
+$highlight: #ff0000;
 
 
 $complement: complement($primary);
 
-$primaryShade: shade($primary, 40%);
-$primaryTint: tint($primary, 40%);
+$primaryShade: lighten($primary, 40%);
+$primaryTint: darken($primary, 40%);
 
-$secondaryShade: shade($secondary, 40%);
-$secondaryTint: tint($secondary, 40%);
+$secondaryShade: lighten($secondary, 40%);
+$secondaryTint: darken($secondary, 40%);
 
-$complementaryShade: shade($complement, 40%);
-$complementaryTint: tint($complement, 40%);
+$complementaryShade: lighten($complement, 40%);
+$complementaryTint: darken($complement, 40%);
 
-$highlightShade: shade($highlight, 40%);
-$highlightTint: tint($highlight, 40%);
+$highlightShade: lighten($highlight, 40%);
+$highlightTint: darken($highlight, 40%);
 
-$accentShade: shade($accent, 40%);
-$accentTint: tint($accent, 40%);
+$accentShade: lighten($accent, 40%);
+$accentTint: darken($accent, 40%);
 
-$backgroundShade: shade($background, 40%);
-$backgrounTint: tint($background, 40%);
+$backgroundShade: lighten($background, 40%);
+$backgrounTint: darken($background, 40%);
