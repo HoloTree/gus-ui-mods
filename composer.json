@@ -19,6 +19,6 @@
     "require": {
         "php": ">=5.3.2",
         "composer/installers": "v1.0.6",
-        "zurb/foundation": "5.3.0"
+        "zurb/foundation": "5.3.3"
     }
 }
