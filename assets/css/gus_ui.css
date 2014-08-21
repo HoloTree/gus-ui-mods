@@ -5108,17 +5108,19 @@ h1.widget-title {
 a {
   color: black; }
 
-#holotree-dms {
-  border: 1px solid royalblue;
-  -webkit-border-radius: 0px;
-  border-radius: 0px; }
-
 #holotree-dms-title-section {
   border: 1px solid black;
   -webkit-border-radius: 0px;
   border-radius: 0px; }
 
-#holotree-dms-content {
+.tabs-content.vertical {
   border: 1px solid black;
   -webkit-border-radius: 0px;
-  border-radius: 0px; }
+  border-radius: 0px;
+  border-left-width: 0px; }
+
+ul.tabs.vertical {
+  border: 1px solid black;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  border-right-width: 0px; }

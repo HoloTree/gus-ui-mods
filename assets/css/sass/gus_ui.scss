@@ -83,7 +83,7 @@ a {
 }
 
 #holotree-dms {
-  @include accent-border;
+ // @include accent-border;
 }
 
 #holotree-dms-title-section{
@@ -91,5 +91,19 @@ a {
 }
 
 #holotree-dms-content {
+ // @include complement-border;
+}
+
+.tabs-content {
+  //@include complement-border;
+}
+
+.tabs-content.vertical {
   @include complement-border;
+  border-left-width: 0px;
+}
+
+ul.tabs.vertical {
+  @include complement-border;
+  border-right-width: 0px;
 }
