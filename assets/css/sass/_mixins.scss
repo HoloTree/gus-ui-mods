@@ -1,0 +1,21 @@
+@mixin borders( $color, $width, $rounding ) {
+  border: $width solid $color;
+  -webkit-border-radius: $rounding;
+  border-radius: $rounding;
+}
+
+@mixin border-square( $color, $width ) {
+  @include borders( $color, $width, 0px );
+}
+
+@mixin border-round(  $color, $width ) {
+  @include borders( $color, $width, 5px );
+}
+
+@mixin accent-border() {
+  @include border-square( $accent, 1px );
+}
+
+@mixin complement-border() {
+  @include border-square( $complement, 1px );
+}

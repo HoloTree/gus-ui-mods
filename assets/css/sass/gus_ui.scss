@@ -1,6 +1,9 @@
 //color palette
 @import "color_palette";
 
+//mixins
+@import "mixins";
+
 //normalize
 @import "../../../../vendor/zurb/foundation/scss/normalize";
 
@@ -77,4 +80,12 @@ h1.widget-title {
 
 a {
   color:  $links-color;
+}
+
+#holotree-dms {
+
+}
+
+#title-section{
+
 }
