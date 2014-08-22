@@ -112,3 +112,15 @@ ul.tabs.vertical {
 body {
   background-color: $background;
 }
+
+.tabs-content .content, form, .ht_dms_template {
+  overflow: scroll;
+}
+
+.button a.button, button, button a {
+  background-color: $accent2;
+  color: $primary;
+  &:hover {
+    background-color: $highlight2;
+  }
+}

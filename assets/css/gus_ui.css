@@ -5126,3 +5126,12 @@ ul.tabs.vertical {
 
 body {
   background-color: #5a180a; }
+
+.tabs-content .content, form {
+  overflow: scroll; }
+
+.button a.button, button, button a {
+  background-color: #c88e4a;
+  color: black; }
+  .button a.button:hover, button:hover, button a:hover {
+    background-color: #efc771; }
