@@ -29,7 +29,7 @@ class gus_ui_mods_setup {
 	}
 
 	function foundation() {
-		return array( 'accordion', 'offcanvas', 'tab', 'alert', 'equalizer' );
+		return array( 'accordion', 'tab', 'alert', 'equalizer' );
 	}
 
 
