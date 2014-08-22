@@ -87,7 +87,8 @@ a {
 }
 
 #holotree-dms-title-section{
-  @include complement-border;
+  a { color: $white; }
+  a:hover { color: $white; }
 }
 
 #holotree-dms-content {
@@ -99,11 +100,15 @@ a {
 }
 
 .tabs-content.vertical {
-  @include complement-border;
   border-left-width: 0px;
+  background-color: $white;
 }
 
 ul.tabs.vertical {
-  @include complement-border;
   border-right-width: 0px;
+  background-color: $highlight2;
+}
+
+body {
+  background-color: $background;
 }

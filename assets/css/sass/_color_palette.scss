@@ -1,8 +1,12 @@
 $primary:#000;
-$secondary: #e7e7e7;
-$background: #e7e7e7;
-$accent: #4169E1;
-$highlight: #ff0000;
+$secondary: #5a180a;
+$highlight: #efc771;
+$highlight2: #efc771;
+$background: $secondary;
+$accent: #e2a219;
+$accent2: #c88e4a;
+$white: #f4d99f;
+
 
 
 $complement: complement($primary);
@@ -24,3 +28,7 @@ $accentTint: darken($accent, 40%);
 
 $backgroundShade: lighten($background, 40%);
 $backgrounTint: darken($background, 40%);
+
+
+$tabs-navigation-bg-color: $highlight2;
+$tabs-navigation-active-bg-color: $accent2;
