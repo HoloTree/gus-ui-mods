@@ -90,3 +90,8 @@ function gus_ui_mods_load() {
 		$GLOBALS[ 'gus_ui_mods_setup' ] = gus_ui_mods_setup::init();
 	}
 }
+
+//set logo in title
+add_action( 'ht_dms_logo_instead_of_name_in_title', function( $logo ) {
+	return GUS_UI_IMG_URL . 'ht-logo-circle-two-color.png';
+} );
