@@ -39,6 +39,10 @@
 define( 'GUS_UI_VERSION', '0.1.0' );
 define( 'GUS_UI_URL',     plugin_dir_url( __FILE__ ) );
 define( 'GUS_UI_PATH',    dirname( __FILE__ ) . '/' );
+define( 'GUS_UI_ASSETS_PATH', GUS_UI_PATH . 'assets/' );
+define( 'GUS_UI_ASSETS_URL', GUS_UI_URL . 'assets/' );
+define( 'GUS_UI_IMG_PATH', GUS_UI_ASSETS_PATH . 'img/' );
+define( 'GUS_UI_IMG_URL', GUS_UI_ASSETS_URL . 'img/' );
 
 
 /**
