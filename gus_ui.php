@@ -102,3 +102,7 @@ function gus_ui_logo( $logo ) {
 function gus_ui_login_logo( $logo ) {
 	return GUS_UI_IMG_URL . 'ht-logo-tree-only-black.png';
 }
+
+//no off canvas
+add_filter( 'app_starter_end_page', '__return_true' );
+add_filter( 'app_starter_header', '__return_true' );
