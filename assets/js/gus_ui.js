@@ -5,4 +5,17 @@ jQuery(document).ready(function($) {
     //init foundation
     $(document).foundation();
 
+    var maxHeight = -1;
+    var divs = '#tabs .content';
+
+    $( divs ).each( function() {
+        maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+    });
+
+    $( divs ).each( function() {
+        $( this ).height( maxHeight) ;
+    });
+
+    $( 'ul.tabs').height( maxHeight );
+
 });
