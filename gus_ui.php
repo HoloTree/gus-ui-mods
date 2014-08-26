@@ -91,7 +91,14 @@ function gus_ui_mods_load() {
 	}
 }
 
-//set logo in title
-add_action( 'ht_dms_logo_instead_of_name_in_title', function( $logo ) {
-	return GUS_UI_IMG_URL . 'ht-logo-circle-two-color.png';
-} );
+//set logo in title & login
+add_filter( 'ht_dms_logo_instead_of_name_in_title', 'gus_ui_logo' );
+add_filter( 'ht_dms_login_logo', 'gus_ui_login_logo' );
+
+function gus_ui_logo( $logo ) {
+	return GUS_UI_IMG_URL . 'ht-logo-tree-only-white.png';
+}
+
+function gus_ui_login_logo( $logo ) {
+	return GUS_UI_IMG_URL . 'ht-logo-tree-only-black.png';
+}
