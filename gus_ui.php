@@ -108,22 +108,13 @@ add_filter( 'app_starter_end_page', '__return_true' );
 add_filter( 'app_starter_header', '__return_true' );
 
 
-
 /**
- * Redirect to home after login. Also non-admin users no admin.
+ * Make sure home url Doesn't have /wp
  */
-add_action( 'admin_init', 'gus_ui_redirect_non_admin_users' );
-function gus_ui_redirect_non_admin_users() {
-	if ( ! HT_DEV_MODE && ! current_user_can( 'manage_options' ) && '/wp-admin/admin-ajax.php' != $_SERVER['PHP_SELF'] ) {
-		wp_redirect( home_url() );
-		exit;
-	}
+add_filter( 'ht_dms_home_url', 'gus_ui_home_url' );
+function gus_ui_home_url( $home ) {
+	return str_replace( '/wp', '', $home );
 }
-add_filter( 'login_redirect', 'gus_ui__login_redirect' );
-function gus_ui__login_redirect( $url ) {
 
-	if (  ! HT_DEV_MODE ) {
-		return home_url();
-	}
 
 }
