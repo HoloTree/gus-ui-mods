@@ -139,6 +139,7 @@ function gus_ui_login_style() {
 
 		.login form {
 			background-color: #F4D99F;
+			border: 4px solid #5A180A;
 		}
 
 		input#wp-submit {
@@ -157,3 +158,5 @@ function gus_ui_login_style() {
 
 //double make sure no admin bar
 add_filter('show_admin_bar', '__return_false', 100 );
+
+add_filter( 'login_headerurl', 'ht_dms_home');
