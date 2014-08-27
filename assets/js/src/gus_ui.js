@@ -23,4 +23,8 @@ jQuery(document).ready(function($) {
 
     $( 'ul.tabs').height( maxHeight );
 
+    $( '#ht-sub-menu-button' ).click(function() {
+        $( this ).toggleClass( 'expanded' ).siblings( 'div' ).slideToggle();
+    });
+
 });

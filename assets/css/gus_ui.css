@@ -5332,6 +5332,43 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+#ht-sub-menu {
+  position: fixed;
+  width: 25%;
+  top: 0; }
+  #ht-sub-menu div {
+    display: none; }
+  #ht-sub-menu #ht-sub-menu-button {
+    position: absolute;
+    top: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    border: 1px solid #f4d99f;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+    background-color: #efc771;
+    border: 0;
+    padding: 4px; }
+    #ht-sub-menu #ht-sub-menu-button.expanded {
+      transform: rotate(90deg); }
+  #ht-sub-menu a {
+    display: block;
+    background: #c88e4a;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f4d99f;
+    text-decoration: none;
+    color: black;
+    font-weight: bold; }
+    #ht-sub-menu a:hover, #ht-sub-menu a:active, #ht-sub-menu a:focus {
+      background: #edc263; }
+
 .row {
   max-width: 98%; }
 

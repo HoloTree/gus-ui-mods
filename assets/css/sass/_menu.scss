@@ -1,0 +1,47 @@
+
+#ht-sub-menu {
+ 
+  position: fixed;
+  width: 25%;
+  top: 0;
+  div {
+    display: none;
+  }
+  #ht-sub-menu-button {
+    position: absolute;
+    top: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    border: 1px solid $white;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+    &.expanded {transform: rotate(90deg); }
+    background-color: $highlight2;
+    border: 0;
+    padding: 4px;
+  }
+
+  a {
+    display: block;
+    background: $accent2;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid $white;
+    text-decoration: none;
+    color: $primary;
+    font-weight: bold;
+    &:hover, &:active, &:focus {
+      background: darken( $highlight2, 3%);
+    }
+
+  }
+
+
+}
+

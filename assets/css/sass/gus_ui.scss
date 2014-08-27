@@ -55,6 +55,8 @@
 "../../../../vendor/zurb/foundation/scss/foundation/components/visibility";
 
 
+@import "menu";
+
 .row { max-width: 98%; }
 
 h1.site-title a, h1.site-title a:visited { color: $tabbar-header-color;}
