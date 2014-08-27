@@ -106,3 +106,16 @@ function gus_ui_login_logo( $logo ) {
 //no off canvas
 add_filter( 'app_starter_end_page', '__return_true' );
 add_filter( 'app_starter_header', '__return_true' );
+
+
+
+/**
+ * Redirect non-admin users to home page
+ */
+add_action( 'admin_init', 'gus_ui_redirect_non_admin_users' );
+function gus_ui_redirect_non_admin_users() {
+	if ( ! current_user_can( 'manage_options' ) && '/wp-admin/admin-ajax.php' != $_SERVER['PHP_SELF'] ) {
+		wp_redirect( home_url() );
+		exit;
+	}
+}
