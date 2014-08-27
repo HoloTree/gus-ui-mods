@@ -110,7 +110,7 @@ add_filter( 'app_starter_header', '__return_true' );
 
 
 /**
- * Redirect non-admin users to home page
+ * Redirect to home after login. Also non-admin users no admin.
  */
 add_action( 'admin_init', 'gus_ui_redirect_non_admin_users' );
 function gus_ui_redirect_non_admin_users() {
@@ -118,4 +118,10 @@ function gus_ui_redirect_non_admin_users() {
 		wp_redirect( home_url() );
 		exit;
 	}
+}
+add_filter( 'login_redirect', 'gus_ui__login_redirect' );
+function gus_ui__login_redirect( $url ) {
+
+	return home_url();
+
 }
