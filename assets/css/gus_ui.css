@@ -5383,3 +5383,6 @@ body {
   color: black; }
   .button a.button:hover, button:hover, button a:hover {
     background-color: #efc771; }
+
+div#holotree-dms-title-section h2.entry-title {
+  color: #e2a219; }

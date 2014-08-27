@@ -114,7 +114,7 @@ add_filter( 'app_starter_header', '__return_true' );
  */
 add_action( 'admin_init', 'gus_ui_redirect_non_admin_users' );
 function gus_ui_redirect_non_admin_users() {
-	if ( ! current_user_can( 'manage_options' ) && '/wp-admin/admin-ajax.php' != $_SERVER['PHP_SELF'] ) {
+	if ( ! HT_DEV_MODE && ! current_user_can( 'manage_options' ) && '/wp-admin/admin-ajax.php' != $_SERVER['PHP_SELF'] ) {
 		wp_redirect( home_url() );
 		exit;
 	}
@@ -122,6 +122,8 @@ function gus_ui_redirect_non_admin_users() {
 add_filter( 'login_redirect', 'gus_ui__login_redirect' );
 function gus_ui__login_redirect( $url ) {
 
-	return home_url();
+	if (  ! HT_DEV_MODE ) {
+		return home_url();
+	}
 
 }
