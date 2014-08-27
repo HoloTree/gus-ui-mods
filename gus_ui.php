@@ -116,5 +116,44 @@ function gus_ui_home_url( $home ) {
 	return str_replace( '/wp', '', $home );
 }
 
+/**
+ * Customize admin screen
+ */
+add_action( 'login_enqueue_scripts', 'gus_ui_login_style'  );
+function gus_ui_login_style() {
+
+	$logo = GUS_UI_IMG_URL . 'ht-logo-square-tree-trans.png';
+?>
+	<style type="text/css">
+		.login h1 a {
+			margin: 0 auto;
+			color: white;
+			background-image: url(<?php echo $logo; ?>) !important;
+			background-repeat: no-repeat;
+			width: 300px !important;
+			height: 150px !important;
+			foo:bar;
+		;
+
+		}
+		html, body{
+			background-color: #EFC771;
+		}
+
+		.login form {
+			background-color: #F4D99F;
+		}
+
+		input#wp-submit {
+			background-color: #5A180A;
+		}
+
+		#login .message {
+			background-color: #F4D99F;
+			border-left: 4px solid #5A180A;
+			border-right: 4px solid #5A180A;
+		}
+	</style>
+<?php
 
 }
