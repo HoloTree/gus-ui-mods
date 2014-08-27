@@ -132,9 +132,6 @@ function gus_ui_login_style() {
 			background-repeat: no-repeat;
 			width: 300px !important;
 			height: 150px !important;
-			foo:bar;
-		;
-
 		}
 		html, body{
 			background-color: #EFC771;
@@ -157,3 +154,6 @@ function gus_ui_login_style() {
 <?php
 
 }
+
+//double make sure no admin bar
+add_filter('show_admin_bar', '__return_false', 100 );
