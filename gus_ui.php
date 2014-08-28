@@ -111,7 +111,7 @@ add_filter( 'app_starter_header', '__return_true' );
 /**
  * Make sure home url Doesn't have /wp
  */
-add_filter( 'ht_dms_home_url', 'gus_ui_home_url' );
+//add_filter( 'ht_dms_home_url', 'gus_ui_home_url' );
 function gus_ui_home_url( $home ) {
 	return str_replace( '/wp', '', $home );
 }
