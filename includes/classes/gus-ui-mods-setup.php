@@ -33,7 +33,7 @@ class gus_ui_mods_setup {
 	}
 
 	function foundation() {
-		return array( 'accordion', 'tab', 'alert' );
+		return array( 'accordion', 'tab', 'alert', 'reveal' );
 	}
 
 
