@@ -5,18 +5,28 @@ jQuery(document).ready(function($) {
     //init foundation
     $(document).foundation();
 
-    var maxHeight = -1;
-    var divs = '#tabs .content';
 
-    $( divs ).each( function() {
-        maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-    });
+    tabHeight();
+    window.addEventListener( 'resize', tabHeight );
 
-    $( divs ).each( function() {
-        $( this ).height( maxHeight) ;
-    });
+    function tabHeight() {
+        var width = $( document ).width();
 
-    $( 'ul.tabs').height( maxHeight );
+        if (width > 480) {
+            var maxHeight = -1;
+            var divs = '#tabs .content';
+
+            $(divs).each(function () {
+                maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+            });
+
+            $(divs).each(function () {
+                $(this).height(maxHeight);
+            });
+
+            $('ul.tabs').height(maxHeight);
+        }
+    }
 
     $( '#ht-sub-menu-button' ).click(function() {
         $( this ).toggleClass( 'expanded' ).siblings( 'div' ).slideToggle();

@@ -8,20 +8,29 @@
 
 jQuery(document).ready(function($) {
     //init foundation
-    $(document).foundation();
+    $( document ).foundation();
 
-    var maxHeight = -1;
-    var divs = '#tabs .content';
+    tabHeight();
+    window.addEventListener( 'resize', tabHeight );
 
-    $( divs ).each( function() {
-        maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-    });
+    function tabHeight() {
+        var width = $( document ).width();
 
-    $( divs ).each( function() {
-        $( this ).height( maxHeight) ;
-    });
+        if (width > 480) {
+            var maxHeight = -1;
+            var divs = '#tabs .content';
 
-    $( 'ul.tabs').height( maxHeight );
+            $(divs).each(function () {
+                maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+            });
+
+            $(divs).each(function () {
+                $(this).height(maxHeight);
+            });
+
+            $('ul.tabs').height(maxHeight);
+        }
+    }
 
     $( '#ht-sub-menu-button' ).click(function() {
         $( this ).toggleClass( 'expanded' ).siblings( 'div' ).slideToggle();
