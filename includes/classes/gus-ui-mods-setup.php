@@ -15,7 +15,7 @@ class gus_ui_mods_setup {
 	}
 
 	function scripts_styles() {
-		$gus_js = 'assets/js/gus_ui.js';
+		$gus_js = 'assets/js/src/gus_ui.js';
 		if ( ! HT_DEV_MODE ) {
 			$gus_js = 'assets/js/gus_ui.min.js';
 		}
