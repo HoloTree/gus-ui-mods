@@ -130,3 +130,11 @@ body {
 div#holotree-dms-title-section {
   h2.entry-title { color: $accent;}
 }
+
+
+.consensus-view {
+  padding: 4px;
+  margin: 12px 4px;
+  @include white-border;
+  h5{ text-align: center; }
+}

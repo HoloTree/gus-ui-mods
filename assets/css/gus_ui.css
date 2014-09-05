@@ -5423,3 +5423,12 @@ body {
 
 div#holotree-dms-title-section h2.entry-title {
   color: #e2a219; }
+
+.consensus-view {
+  padding: 4px;
+  margin: 12px 4px;
+  border: 1px solid #f4d99f;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+  .consensus-view h5 {
+    text-align: center; }

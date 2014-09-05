@@ -27,3 +27,7 @@
 @mixin highlight-border() {
   @include ht-border( $highlight );
 }
+
+@mixin white-border() {
+  @include ht-border( $white );
+}
