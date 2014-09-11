@@ -3796,7 +3796,7 @@ dialog.full, .reveal-modal.full {
 
   .xlarge-text-justify {
     text-align: justify !important; } }
-@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
+@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
   .xxlarge-only-text-left {
     text-align: left !important; }
 
@@ -5336,6 +5336,9 @@ th.hide-for-touch {
   position: fixed;
   width: 25%;
   top: 0; }
+  @media only screen and (max-width: 40em) {
+    #ht-sub-menu {
+      left: 80%; } }
   #ht-sub-menu div {
     display: none; }
   #ht-sub-menu #ht-sub-menu-button {
@@ -5395,6 +5398,9 @@ a {
 
 #holotree-dms {
   padding-top: 51px; }
+  @media only screen and (max-width: 40em) {
+    #holotree-dms {
+      padding-top: 5px; } }
 
 #holotree-dms-title-section a {
   color: #f4d99f; }
@@ -5437,3 +5443,7 @@ div#holotree-dms-title-section h2.entry-title {
   background-color: #FFF;
   padding: 4px;
   margin: 8px 0 4px; }
+
+@media only screen and (max-width: 40em) {
+  .tabs dd > a, .tabs .tab-title > a {
+    padding: .05em 1em; } }

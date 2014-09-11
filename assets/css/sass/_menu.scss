@@ -4,6 +4,9 @@
   position: fixed;
   width: 25%;
   top: 0;
+  @media #{$small-only} {
+    left: 80%;
+  }
   div {
     display: none;
   }

@@ -86,6 +86,9 @@ a {
 
 #holotree-dms {
   padding-top: 51px;
+  @media #{$small-only} {
+    padding-top: 5px;
+  }
 }
 
 #holotree-dms-title-section{
@@ -145,3 +148,10 @@ div#holotree-dms-title-section {
   padding: 4px;
   margin: 8px 0 4px;
 }
+
+@media #{$small-only} {
+  .tabs dd>a, .tabs .tab-title>a {
+    padding: .05em 1em;
+  }
+}
+
