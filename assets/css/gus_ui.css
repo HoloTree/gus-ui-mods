@@ -5372,6 +5372,9 @@ th.hide-for-touch {
     #ht-sub-menu a:hover, #ht-sub-menu a:active, #ht-sub-menu a:focus {
       background: #edc263; }
 
+body *, .ht_dms_template {
+  overflow: hidden; }
+
 .row {
   max-width: 98%; }
 
