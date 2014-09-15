@@ -4,13 +4,17 @@
   position: fixed;
   width: 25%;
   top: 0;
+  padding-top: 100px;
   @media #{$small-only} {
     left: 80%;
   }
   div {
     display: none;
+    margin-top: -100px;
+    z-index: 101;
   }
   #ht-sub-menu-button {
+    z-index: 103;
     position: absolute;
     top: 15px;
     border: 0;

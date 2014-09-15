@@ -5335,13 +5335,17 @@ th.hide-for-touch {
 #ht-sub-menu {
   position: fixed;
   width: 25%;
-  top: 0; }
+  top: 0;
+  padding-top: 100px; }
   @media only screen and (max-width: 40em) {
     #ht-sub-menu {
       left: 80%; } }
   #ht-sub-menu div {
-    display: none; }
+    display: none;
+    margin-top: -100px;
+    z-index: 101; }
   #ht-sub-menu #ht-sub-menu-button {
+    z-index: 103;
     position: absolute;
     top: 15px;
     border: 0;
