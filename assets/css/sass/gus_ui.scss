@@ -137,6 +137,11 @@ body {
 
 div#holotree-dms-title-section {
   h2.entry-title { color: $accent;}
+
+  @media #{$small-only} {
+    padding-top: 10px;
+  }
+
 }
 
 

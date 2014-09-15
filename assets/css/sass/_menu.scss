@@ -2,11 +2,10 @@
 #ht-sub-menu {
  
   position: fixed;
-  width: 25%;
   top: 0;
   padding-top: 100px;
-  @media #{$small-only} {
-    left: 80%;
+  .fa{
+    margin-right: 20px;
   }
   div {
     display: none;
@@ -37,8 +36,8 @@
   a {
     display: block;
     background: $accent2;
-    text-align: center;
-    padding: 20px 0;
+    text-align: left;
+    padding: 20px;
     border-bottom: 1px solid $white;
     text-decoration: none;
     color: $primary;
