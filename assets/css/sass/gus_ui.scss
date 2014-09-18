@@ -152,11 +152,20 @@ div#holotree-dms-title-section {
   h5{ text-align: center; }
 }
 
+#ht-dms-third-element {
+  background-color: $white;
+  overflow:scroll;
+  @media #{medium-up} {
+    height: 300px;
+  }
+}
+
 
 #dms-action-result {
   background-color: #FFF;
   padding: 4px;
   margin: 8px 0 4px;
+  text-align: center;
 }
 
 @media #{$small-only} {

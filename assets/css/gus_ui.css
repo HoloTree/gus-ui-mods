@@ -5448,10 +5448,18 @@ div#holotree-dms-title-section h2.entry-title {
   .consensus-view h5 {
     text-align: center; }
 
+#ht-dms-third-element {
+  background-color: #f4d99f;
+  overflow: scroll; }
+  @media medium-up {
+    #ht-dms-third-element {
+      height: 300px; } }
+
 #dms-action-result {
   background-color: #FFF;
   padding: 4px;
-  margin: 8px 0 4px; }
+  margin: 8px 0 4px;
+  text-align: center; }
 
 @media only screen and (max-width: 40em) {
   .tabs dd > a, .tabs .tab-title > a {
