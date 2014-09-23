@@ -191,3 +191,15 @@ span.breadcrumbs-component a {
   font-size: 1.1618em;
 }
 
+.fa {
+  vertical-align: text-bottom;
+}
+
+.consensus-tab-label {
+  span.status {
+    margin: 0 4px;
+  }
+  .fa {
+    vertical-align: bottom;
+  }
+}
