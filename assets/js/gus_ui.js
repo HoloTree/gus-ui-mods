@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
                     $(this).height(maxHeight);
                 });
 
-                $('ul.tabs').height(maxHeight);
+                $('ul.tabs').not( '.consensus-tabs' ).height(maxHeight);
             }
         }
     }
