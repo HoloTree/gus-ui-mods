@@ -85,7 +85,7 @@ add_filter( 'ht_dms_foundation_vertical_tabs', '__return_true' );
 //load
 add_action( 'plugins_loaded', 'gus_ui_mods_load' );
 function gus_ui_mods_load() {
-	if (  defined( 'HT_VERSION' ) ) {
+	if (  defined( 'HT_DMS_VERSION' ) ) {
 		include( trailingslashit( GUS_UI_PATH ) . 'includes/classes/gus-ui-mods-setup.php' );
 		$GLOBALS[ 'gus_ui_mods_setup' ] = gus_ui_mods_setup::init();
 	}
