@@ -1,0 +1,97 @@
+.orgName, .gruName, .decName {
+  font-family: "Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
+  color:#000000;
+  text-shadow: 1px 0 #000000;
+  letter-spacing:1px;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  vertical-align: middle;
+  background-color: rgba(244,217,159,0.5);
+}
+
+#breadcrumbs {
+  background: #f4d99f;
+  margin-bottom: 4px;
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 1em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+  }
+
+  .fa-institution:before, .fa-bank:before, .fa-university:before {
+    content: "\f19c";
+    color: #e2a219;
+    margin: 0 -156px 0 56px;
+    z-index: -1000;
+    padding-left: 10px;
+  }
+
+  .fa-group:before, .fa-users:before {
+    content: "\f0c0";
+    color: #e2a219;
+    margin: 0 -111px 0 25px;
+    z-index: -1000;
+    padding-left: 4px;
+  }
+
+  .fa-check:before {
+    content: "\f00c";
+    color: #e2a219;
+    margin: 0 -110px 0 38px;
+    z-index: -1000;
+  }
+
+  div {
+    float: left;
+  }
+
+
+  span {
+    margin: 4px 0 7px 0;
+    padding-right: 10px;
+  }
+
+  span.gru {
+    padding-right: 3px !important;
+  }
+
+  img.brand {
+    float: left;
+    margin: 10px 0 5px 10px;
+  }
+
+  /*if screen less than 658*/
+  @media (max-width:657px) {
+    .fa {
+      font-size: 1.5em !important;
+    }
+    .fa-institution:before, .fa-bank:before, .fa-university:before {
+      margin: 0 -36px 0 56px;
+    }
+    .fa-group:before, .fa-users:before {
+      margin: 0 -36px 0 25px;
+    }
+    .fa-check:before {
+      margin: 0 -36px 0 38px;
+    }
+
+  }
+
+}
+
+
+.in {
+  padding: 5px 15px 0 15px;
+  border-right: dotted #330e06 2px;
+  background: #f4d99f;
+}
+
+
