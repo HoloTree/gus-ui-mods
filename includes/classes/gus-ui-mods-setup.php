@@ -15,19 +15,24 @@ class gus_ui_mods_setup {
 	}
 
 	function scripts_styles() {
+		$version = GUS_UI_VERSION;
+		if ( HT_DEV_MODE ) {
+			$version = rand();
+		}
+
 		$gus_js = 'assets/js/src/gus_ui.js';
 		if ( ! HT_DEV_MODE ) {
 			$gus_js = 'assets/js/gus_ui.min.js';
 		}
 		wp_enqueue_style( 'gus', trailingslashit( GUS_UI_URL) . 'assets/css/gus_ui.min.css' );
-		wp_enqueue_script( 'gus', trailingslashit( GUS_UI_URL) . $gus_js, array( 'jquery', 'foundation' ), GUS_UI_VERSION, true );
+		wp_enqueue_script( 'gus', trailingslashit( GUS_UI_URL) . $gus_js, array( 'jquery', 'foundation' ), $version, true );
 		$url = trailingslashit( GUS_UI_URL ).'vendor/zurb/foundation/js/foundation/';
 
 		//@todo minify foundation
-		wp_enqueue_script( 'foundation', $url.'foundation.js', array( 'jquery' ), GUS_UI_VERSION, true );
+		wp_enqueue_script( 'foundation', $url.'foundation.js', array( 'jquery' ), $version, true );
 		foreach( $this->foundation() as $name ) {
 			$file = $url.'foundation.'.$name.'.js';
-			wp_enqueue_script( $name, $file, array( 'jquery', 'foundation' ), GUS_UI_VERSION, true );
+			wp_enqueue_script( $name, $file, array( 'jquery', 'foundation' ), $version, true );
 		}
 
 	}

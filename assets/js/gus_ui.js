@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     window.addEventListener( 'resize', tabHeight );
 
     $( document ).ajaxComplete(function() {
-        tabHeight();
+        //tabHeight();
     });
 
 
