@@ -20,26 +20,33 @@
     font-variant: normal;
     font-weight: normal;
     line-height: 1;
-    font-size: 1em;
+    font-size: 2em;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     color: #ffffff;
   }
 
-  .fa-institution:before, .fa-bank:before, .fa-university:before {
+  .fa-university:before, .fa-institution:before, .fa-bank:before {
     content: "\f19c";
     color: #e2a219;
-    margin: 0 -156px 0 56px;
     z-index: -1000;
     padding-left: 10px;
+  }
+
+  .fa-university:before {
+    margin: 0 -52px 0 21px;
   }
 
   .fa-group:before, .fa-users:before {
     content: "\f0c0";
     color: #e2a219;
-    margin: 0 -111px 0 25px;
     z-index: -1000;
     padding-left: 4px;
+  }
+
+  .fa-group:before {
+    margin: 0 -120px 0 92px;
+    padding-left: 0 !important;
   }
 
   .fa-check:before {
@@ -68,30 +75,42 @@
     margin: 10px 0 5px 10px;
   }
 
-  /*if screen less than 658*/
-  @media (max-width:657px) {
+  .in {
+    padding: 5px 15px 0 15px;
+    border-right: dotted #330e06 2px;
+    background: #f4d99f;
+  }
+
+  /*if screen less than 665*/
+  @media #{$small-only} {
     .fa {
       font-size: 1.5em !important;
     }
-    .fa-institution:before, .fa-bank:before, .fa-university:before {
-      margin: 0 -36px 0 56px;
+    .fa-institution:before, .fa-bank:before, .fa-university:before, .fa-group:before, .fa-users:before, .fa-check:before {
+      margin: 0px 0px 0px 0px;
     }
-    .fa-group:before, .fa-users:before {
-      margin: 0 -36px 0 25px;
+
+    font#breadNames, font#breadGroup, font#breadDecid {
+      display: none !important;
     }
-    .fa-check:before {
-      margin: 0 -36px 0 38px;
+
+    #site-logo-home-link a img {
+      padding: 0px 5px 0 5px;
     }
+
+    #site-logo-home-link {
+      padding: 1px;
+    }
+
 
   }
 
-}
 
 
-.in {
-  padding: 5px 15px 0 15px;
-  border-right: dotted #330e06 2px;
-  background: #f4d99f;
+
+
+
 }
+
 
 
