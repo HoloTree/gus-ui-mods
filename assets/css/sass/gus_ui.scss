@@ -219,3 +219,6 @@ span.breadcrumbs-component a {
   }
 }
 
+input[type=checkbox]+label, input[type=radio]+label {
+  margin-left: 1.5em;
+}

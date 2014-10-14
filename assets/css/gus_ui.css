@@ -5562,3 +5562,6 @@ span.breadcrumbs-component a {
 .mini-mode .avatar img {
   width: 24px;
   height: 24px; }
+
+input[type=checkbox] + label, input[type=radio] + label {
+  margin-left: 1.5em; }
