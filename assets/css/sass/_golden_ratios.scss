@@ -1,0 +1,24 @@
+$g2third : .618;
+$gthird : .382;
+$g3 : $gthird;
+$gsixth : .236;
+$g6 : $gsixth;
+$g12 : .146;
+$g24 : .09;
+$g48 : .056;
+
+@mixin golden-width( $number ) {
+  width : percentage( $number );
+}
+
+@mixin width-golden-2third {
+  @include golden-width( $g2third );
+}
+
+@mixin width-golden-third{
+  @include golden-width( $g3 );
+}
+
+@mixin width-golden-sixth{
+  @include golden-width( $g6 );
+}

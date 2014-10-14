@@ -5485,6 +5485,20 @@ a {
 #holotree-dms-title-section a:hover {
   color: #f4d99f; }
 
+@media only screen and (min-width: 90.063em) {
+  .tabs-content.vertical {
+    width: 61.8%; }
+
+  ul.tabs.vertical {
+    width: 38.2%;
+    max-width: 38.2%; } }
+@media only screen and (min-width: 40.063em) {
+  #tabs .content {
+    padding: 5.6%; } }
+@media only screen and (max-width: 40em) {
+  #tabs .content {
+    padding-top: 5.6%;
+    padding-bottom: 5.6%; } }
 .tabs-content.vertical {
   border-left-width: 0px;
   background-color: #f4d99f; }
@@ -5535,7 +5549,7 @@ div#holotree-dms-title-section h2.entry-title {
 
 @media only screen and (max-width: 40em) {
   .tabs dd > a, .tabs .tab-title > a {
-    padding: .05em 1em; } }
+    padding: 0.05em 5.6% 0.05em 1em; } }
 .visualize-hierarchy-text {
   font-size: 10px;
   text-align: center; }
@@ -5565,3 +5579,17 @@ span.breadcrumbs-component a {
 
 input[type=checkbox] + label, input[type=radio] + label {
   margin-left: 1.5em; }
+
+span.label.preference-label {
+  width: 23.6%;
+  margin-right: 14.6%;
+  background-color: #c88e4a;
+  color: #f4d99f; }
+
+ul.preference-list li {
+  background-color: white;
+  margin: 10px 0px;
+  color: #5a180a; }
+
+ul.tabs li i.fa {
+  margin-right: 5.6%; }

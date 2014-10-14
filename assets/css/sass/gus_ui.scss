@@ -2,6 +2,9 @@
 //color palette
 @import "color_palette";
 
+//golden ratios
+@import "golden_ratios";
+
 //mixins
 @import "mixins";
 
@@ -14,6 +17,7 @@
 
 //sassy_s
 @import "sassy_s/sassy_s";
+
 
 
 //foundation
@@ -58,6 +62,9 @@
 
 @import "menu";
 @import "breadcrumbs";
+
+
+
 
 body *, .ht_dms_template {
   overflow: hidden;
@@ -106,10 +113,29 @@ a {
  // @include complement-border;
 }
 
-.tabs-content {
-  //@include complement-border;
+@media #{$xlarge-up} {
+  .tabs-content.vertical {
+    @include width-golden-2third;
+  }
+  ul.tabs.vertical {
+    @include width-golden-third;
+    max-width: percentage( $g3 );
+
+  }
 }
 
+@media #{$medium-up} {
+  #tabs .content {
+    padding: percentage($g48);
+  }
+}
+
+@media #{$small-only} {
+  #tabs .content {
+    padding-top: percentage($g48);
+    padding-bottom: percentage($g48);
+  }
+}
 .tabs-content.vertical {
   border-left-width: 0px;
   background-color: $white;
@@ -171,7 +197,7 @@ div#holotree-dms-title-section {
 
 @media #{$small-only} {
   .tabs dd>a, .tabs .tab-title>a {
-    padding: .05em 1em;
+    padding: .05em percentage( $g48) .05em 1em;
   }
 }
 
@@ -206,7 +232,6 @@ span.breadcrumbs-component a {
 }
 
 
-
 .mini-mode {
   ul li {
     padding: 4px;
@@ -221,4 +246,22 @@ span.breadcrumbs-component a {
 
 input[type=checkbox]+label, input[type=radio]+label {
   margin-left: 1.5em;
+}
+
+span.label.preference-label {
+  @include width-golden-sixth;
+  margin-right: percentage( $g12 );
+  background-color: $accent2;
+  color: $white;
+}
+
+ul.preference-list li {
+  background-color: white;
+  margin: 10px 0px;
+  color: $secondary;
+}
+
+
+ul.tabs li i.fa {
+  margin-right: percentage( $g48 );
 }
