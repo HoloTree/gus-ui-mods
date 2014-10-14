@@ -122,7 +122,7 @@ function gus_ui_home_url( $home ) {
 add_action( 'login_enqueue_scripts', 'gus_ui_login_style'  );
 function gus_ui_login_style() {
 
-	$logo = GUS_UI_IMG_URL . 'ht-logo-square-tree-trans.png';
+	$logo = GUS_UI_IMG_URL . 'ht-logo-square-full.png';
 ?>
 	<style type="text/css">
 		.login h1 a {
@@ -148,9 +148,48 @@ function gus_ui_login_style() {
 
 		#login .message {
 			background-color: #F4D99F;
-			border-left: 4px solid #5A180A;
-			border-right: 4px solid #5A180A;
+			border-left: none;
 		}
+
+		input[type=text]:focus, input[type=password]:focus      {
+			border-color: #fbfbfb;
+			box-shadow: 0 0 10px rgba(251, 251, 251, 1);
+		}
+
+		input#wp-submit.button.button-primary.button-large {
+			border: none;
+			box-shadow: none;
+		}
+
+		input#wp-submit.button.button-primary.button-large:hover {
+			box-shadow: 0 5px 10px rgba(251, 251, 251, 1);
+		}
+
+		input[type=checkbox]:checked:before {
+			content: '\f147';
+			margin: -3px 0 0 -4px;
+			color: #5a180a;
+		}
+
+		input[type=checkbox]:focus {
+			border: none;
+			box-shadow: 0 0 10px rgba(251, 251, 251, 1);
+		}
+
+		.login #backtoblog a, .login #nav a {
+			text-align: center;
+			padding-left: 60px;
+		}
+
+		.login #backtoblog a, .login #nav a {
+			color: #5a180a;
+		}
+
+		.login #backtoblog a:hover, .login #nav a:hover{
+			color: #777;
+		}
+
+
 	</style>
 <?php
 
