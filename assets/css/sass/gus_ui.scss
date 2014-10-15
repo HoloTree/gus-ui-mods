@@ -154,12 +154,9 @@ body {
   overflow: scroll;
 }
 
-.button a.button, button, button a {
+.button a.button, button, button a, button, .button {
+  @include gus_button;
   background-color: $accent2;
-  color: $primary;
-  &:hover {
-    background-color: $highlight2;
-  }
 }
 
 div#holotree-dms-title-section {
@@ -186,7 +183,6 @@ div#holotree-dms-title-section {
     height: 300px;
   }
 }
-
 
 #dms-action-result {
   background-color: #FFF;
@@ -249,10 +245,7 @@ input[type=checkbox]+label, input[type=radio]+label {
 }
 
 span.label.preference-label {
-  @include width-golden-sixth;
-  margin-right: percentage( $g12 );
-  background-color: $accent2;
-  color: $white;
+ @include gus_label;
 }
 
 ul.preference-list li {
@@ -264,4 +257,52 @@ ul.preference-list li {
 
 ul.tabs li i.fa {
   margin-right: percentage( $g48 );
+}
+
+li.pods-field {
+  background: #FFF;
+  margin: 10px;
+  padding: 0px;
+
+
+}
+.pods-form-front .pods-field-label {
+  @include gus_label;
+  width : percentage( $g6 ) !important;
+  max-width: percentage( $g6 ) !important;
+
+}
+
+.pods-field label {
+  padding: 0 !important;
+  color: $white !important;
+}
+
+.pods-form-front .pods-field-input {
+  width: percentage( $g2third ) !important;
+  padding-right: percentage( $g48 );
+}
+
+.pods-field .pods-boolean label {
+  color: $primary !important;
+}
+
+@media #{$small-only}  {
+  .pods-form-front .pods-field-label,  .pods-form-front .pods-field-input {
+    width: 100%;
+  }
+  .pods-field-input {
+    padding-left: percentage( $g48 );
+    padding-top: percentage( $g48 );
+  }
+
+
+}
+
+input[type=submit] {
+  @include submit-button;
+}
+
+p.pods-submit {
+  margin-right:10px;
 }

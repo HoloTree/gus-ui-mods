@@ -31,3 +31,28 @@
 @mixin white-border() {
   @include ht-border( $white );
 }
+
+@mixin gus_label() {
+  @include width-golden-sixth;
+  margin-right: percentage( $g12 );
+  background-color: $accent2;
+  color:  $white;
+  text-align: center;
+}
+
+@mixin gus_button() {
+  @include button($button-med, $accent2, false, false, false, false, false, $accent, null, false);
+  color: $white;
+}
+
+@mixin submit-button() {
+  @include gus_button;
+  text-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  &:active, &:hover, &:focus {
+    text-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}

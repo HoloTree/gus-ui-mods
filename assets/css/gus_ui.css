@@ -5513,11 +5513,34 @@ body {
 .tabs-content .content, form, .ht_dms_template {
   overflow: scroll; }
 
-.button a.button, button, button a {
+.button a.button, button, button a, button, .button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
   background-color: #c88e4a;
-  color: black; }
-  .button a.button:hover, button:hover, button a:hover {
-    background-color: #efc771; }
+  border-color: #a87233;
+  color: white;
+  color: #f4d99f;
+  background-color: #c88e4a; }
+  .button a.button:hover, .button a.button:focus, button:hover, button:focus, button a:hover, button a:focus, button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #e2a219; }
+  .button a.button:hover, .button a.button:focus, button:hover, button:focus, button a:hover, button a:focus, button:hover, button:focus, .button:hover, .button:focus {
+    color: white; }
 
 div#holotree-dms-title-section h2.entry-title {
   color: #e2a219; }
@@ -5584,7 +5607,8 @@ span.label.preference-label {
   width: 23.6%;
   margin-right: 14.6%;
   background-color: #c88e4a;
-  color: #f4d99f; }
+  color: #f4d99f;
+  text-align: center; }
 
 ul.preference-list li {
   background-color: white;
@@ -5593,3 +5617,73 @@ ul.preference-list li {
 
 ul.tabs li i.fa {
   margin-right: 5.6%; }
+
+li.pods-field {
+  background: #FFF;
+  margin: 10px;
+  padding: 0px; }
+
+.pods-form-front .pods-field-label {
+  width: 23.6%;
+  margin-right: 14.6%;
+  background-color: #c88e4a;
+  color: #f4d99f;
+  text-align: center;
+  width: 23.6% !important;
+  max-width: 23.6% !important; }
+
+.pods-field label {
+  padding: 0 !important;
+  color: #f4d99f !important; }
+
+.pods-form-front .pods-field-input {
+  width: 61.8% !important;
+  padding-right: 5.6%; }
+
+.pods-field .pods-boolean label {
+  color: black !important; }
+
+@media only screen and (max-width: 40em) {
+  .pods-form-front .pods-field-label, .pods-form-front .pods-field-input {
+    width: 100%; }
+
+  .pods-field-input {
+    padding-left: 5.6%;
+    padding-top: 5.6%; } }
+input[type=submit] {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #c88e4a;
+  border-color: #a87233;
+  color: white;
+  color: #f4d99f;
+  text-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+  input[type=submit]:hover, input[type=submit]:focus {
+    background-color: #e2a219; }
+  input[type=submit]:hover, input[type=submit]:focus {
+    color: white; }
+  input[type=submit]:active, input[type=submit]:hover, input[type=submit]:focus {
+    text-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none; }
+
+p.pods-submit {
+  margin-right: 10px; }
