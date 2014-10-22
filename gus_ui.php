@@ -123,6 +123,7 @@ add_action( 'login_enqueue_scripts', 'gus_ui_login_style'  );
 function gus_ui_login_style() {
 
 	$logo = GUS_UI_IMG_URL . 'ht-logo-square-full.png';
+	$registration = pods_v_sanitized( 'action')
 ?>
 	<style type="text/css">
 		.login h1 a {
@@ -151,7 +152,7 @@ function gus_ui_login_style() {
 			border-left: none;
 		}
 
-		input[type=text]:focus, input[type=password]:focus      {
+		input[type=text]:focus, input[type=password]:focus, .button:focus  {
 			border-color: #fbfbfb;
 			box-shadow: 0 0 10px rgba(251, 251, 251, 1);
 		}
@@ -159,6 +160,7 @@ function gus_ui_login_style() {
 		input#wp-submit.button.button-primary.button-large {
 			border: none;
 			box-shadow: none;
+            width: 100%;
 		}
 
 		input#wp-submit.button.button-primary.button-large:hover {
@@ -177,17 +179,70 @@ function gus_ui_login_style() {
 		}
 
 		.login #backtoblog a, .login #nav a {
-			text-align: center;
-			padding-left: 60px;
-		}
-
-		.login #backtoblog a, .login #nav a {
-			color: #5a180a;
+			color: #5A180A;
 		}
 
 		.login #backtoblog a:hover, .login #nav a:hover{
 			color: #777;
 		}
+
+		.login #backtoblog, .login #nav {
+			display: none;
+		}
+
+        p.forgetmenot {
+            display: block;
+            width: 100%;
+            margin-bottom: 7px !important;
+            text-align: center;
+        }
+
+		p.message.register .button {
+			background: #5A180A !important;
+			color: #f4d99f !important;
+			box-shadow: none !important;
+			-webkit-box-shadow: none  !important;
+			border: none !important;
+		}
+
+		p.message.register .button:hover, p.message.register .button:focus {
+			background: #f4d99f !important;
+			color: #5A180A  !important;
+			box-shadow: 0 0 10px rgba(251, 251, 251, 1) !important;
+			border: 1px solid #5A180A !important;
+		}
+
+		<?php
+			if ( $registration ) : ?>
+				#login {
+					width: 61.8%;
+					padding: 9% 5.6%;
+					margin: auto;
+				}
+
+                p#no-submit {
+                    background: #5a180a;
+                    color: #f4d99f;
+                    text-align: center;
+                    padding: 8px;
+                }
+
+
+				p.message.register {
+					text-align: center;
+					font-size: 1.46em;
+				}
+
+	        <?php else : ?>
+				p.message.register .button:first-child {
+					float:left;
+				}
+
+				p.message.register .button:first-child {
+					float:right;
+				}
+
+		<?php endif; ?>
 
 
 	</style>

@@ -696,6 +696,10 @@ object {
 .infinity-end.neverending .site-footer {
   display: block; }
 
+.caldera-grid .alert.alert-success {
+  background-color: #5a180a;
+  color: #f4d99f; }
+
 meta.foundation-version {
   font-family: "/5.3.3/"; }
 
