@@ -5489,13 +5489,6 @@ a {
 #holotree-dms-title-section a:hover {
   color: #f4d99f; }
 
-@media only screen and (min-width: 90.063em) {
-  .tabs-content.vertical {
-    width: 61.8%; }
-
-  ul.tabs.vertical {
-    width: 38.2%;
-    max-width: 38.2%; } }
 @media only screen and (min-width: 40.063em) {
   #tabs .content {
     padding: 5.6%; } }

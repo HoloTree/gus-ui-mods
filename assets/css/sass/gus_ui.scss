@@ -114,16 +114,7 @@ a {
  // @include complement-border;
 }
 
-@media #{$xlarge-up} {
-  .tabs-content.vertical {
-    @include width-golden-2third;
-  }
-  ul.tabs.vertical {
-    @include width-golden-third;
-    max-width: percentage( $g3 );
 
-  }
-}
 
 @media #{$medium-up} {
   #tabs .content {
