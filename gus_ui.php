@@ -212,6 +212,12 @@ function gus_ui_login_style() {
 			border: 1px solid #5A180A !important;
 		}
 
+		@media only screen and (max-width: 600px) {
+			button, .button, button a, .button a {
+				width: 100%;
+			}
+		}
+
 		<?php
 			if ( $registration ) : ?>
 				#login {
