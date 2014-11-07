@@ -25,7 +25,7 @@ class gus_ui_mods_setup {
 			$gus_js = 'assets/js/gus_ui.min.js';
 		}
 		wp_enqueue_style( 'gus', trailingslashit( GUS_UI_URL) . 'assets/css/gus_ui.min.css' );
-		wp_enqueue_script( 'gus', trailingslashit( GUS_UI_URL) . $gus_js, array( 'jquery', 'foundation' ), $version, true );
+		//wp_enqueue_script( 'gus', trailingslashit( GUS_UI_URL) . $gus_js, array( 'jquery', 'foundation' ), $version, true );
 		$url = trailingslashit( GUS_UI_URL ).'vendor/zurb/foundation/js/foundation/';
 
 		//@todo minify foundation
