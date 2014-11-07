@@ -19,8 +19,8 @@
     border: 0;
     text-indent: 200%;
     overflow: hidden;
-    background: url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
-    border: 1px solid $white;
+    top:0;
+    left:-5px;
     border-radius: 3px;
     background-size: 80%;
     width: 30px;
@@ -31,6 +31,16 @@
     background-color: $highlight2;
     border: 0;
     padding: 4px;
+    &:before {
+      font-family: FontAwesome;
+      top: 0;
+      left: -5px;
+      content: "\f0c9";
+      color: #000;
+      font-size: 1.2em;
+    }
+
+
   }
 
   a {

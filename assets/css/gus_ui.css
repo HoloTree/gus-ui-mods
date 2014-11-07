@@ -5354,8 +5354,8 @@ th.hide-for-touch {
     border: 0;
     text-indent: 200%;
     overflow: hidden;
-    background: url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
-    border: 1px solid #f4d99f;
+    top: 0;
+    left: -5px;
     border-radius: 3px;
     background-size: 80%;
     width: 30px;
@@ -5367,6 +5367,12 @@ th.hide-for-touch {
     padding: 4px; }
     #ht-sub-menu #ht-sub-menu-button.expanded {
       transform: rotate(90deg); }
+    #ht-sub-menu #ht-sub-menu-button:before {
+      position: absolute;
+      font-family: FontAwesome;
+      top: 0;
+      left: -5px;
+      content: "\f0c9"; }
   #ht-sub-menu a {
     display: block;
     background: #c88e4a;
