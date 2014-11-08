@@ -5368,11 +5368,12 @@ th.hide-for-touch {
     #ht-sub-menu #ht-sub-menu-button.expanded {
       transform: rotate(90deg); }
     #ht-sub-menu #ht-sub-menu-button:before {
-      position: absolute;
       font-family: FontAwesome;
       top: 0;
       left: -5px;
-      content: "\f0c9"; }
+      content: "\f0c9";
+      color: #000;
+      font-size: 1.5em; }
   #ht-sub-menu a {
     display: block;
     background: #c88e4a;
