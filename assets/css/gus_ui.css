@@ -5654,7 +5654,7 @@ li.pods-field {
   .pods-field-input {
     padding-left: 5.6%;
     padding-top: 5.6%; } }
-input[type=submit] {
+input[type=submit], input[type=submit] .input-button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
@@ -5680,11 +5680,11 @@ input[type=submit] {
   text-shadow: none;
   box-shadow: none;
   -webkit-box-shadow: none; }
-  input[type=submit]:hover, input[type=submit]:focus {
+  input[type=submit]:hover, input[type=submit]:focus, input[type=submit] .input-button:hover, input[type=submit] .input-button:focus {
     background-color: #e2a219; }
-  input[type=submit]:hover, input[type=submit]:focus {
+  input[type=submit]:hover, input[type=submit]:focus, input[type=submit] .input-button:hover, input[type=submit] .input-button:focus {
     color: white; }
-  input[type=submit]:active, input[type=submit]:hover, input[type=submit]:focus {
+  input[type=submit]:active, input[type=submit]:hover, input[type=submit]:focus, input[type=submit] .input-button:active, input[type=submit] .input-button:hover, input[type=submit] .input-button:focus {
     text-shadow: none;
     box-shadow: none;
     -webkit-box-shadow: none; }

@@ -291,10 +291,16 @@ li.pods-field {
 
 }
 
-input[type=submit] {
+input[type=submit], input[type=submit] .input-button {
   @include submit-button;
 }
 
 p.pods-submit {
   margin-right:10px;
+}
+
+#consensus-views-chooser li {
+  background-color: #FF0;
+  padding: 1%;
+
 }
