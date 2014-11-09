@@ -5691,3 +5691,25 @@ input[type=submit], input[type=submit] .input-button {
 
 p.pods-submit {
   margin-right: 10px; }
+
+#consensus-views-chooser li {
+  background-color: white;
+  padding: 1%; }
+
+.group-membership-action {
+  padding: 1%;
+  background: white; }
+  .group-membership-action p, .group-membership-action label {
+    background-color: #c88e4a;
+    color: #f4d99f;
+    padding: 1%; }
+
+#group-members-view {
+  background-color: #FFF;
+  padding: 1% 0;
+  margin: 1% 0; }
+  #group-members-view #group-member-details {
+    background-color: #c88e4a;
+    color: #f4d99f;
+    padding: 1%;
+    margin: 1%; }

@@ -300,7 +300,33 @@ p.pods-submit {
 }
 
 #consensus-views-chooser li {
-  background-color: #FF0;
+  background-color: white;
   padding: 1%;
+
+}
+
+.group-membership-action {
+  padding: 1%;
+  background: white;
+  p, label {
+    background-color:  $accent2;
+    color: $white;
+    padding: 1%;
+  }
+
+}
+
+#group-members-view {
+  background-color: #FFF;
+  padding: 1% 0;
+  margin: 1% 0;
+
+  #group-member-details {
+    background-color:  $accent2;
+    color: $white;
+    padding: 1%;
+    margin: 1%;
+
+  }
 
 }
