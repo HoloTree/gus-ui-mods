@@ -322,11 +322,7 @@ p.pods-submit {
   margin: 1% 0;
 
   #group-member-details {
-    background-color:  $accent2;
-    color: $white;
-    padding: 1%;
-    margin: 1%;
-
+    @include gus_label_like;
   }
 
 }
@@ -351,10 +347,7 @@ p.pods-submit {
   }
 
   .comment-meta span {
-    background-color:  $accent2;
-    color: $white;
-    padding: 1%;
-    margin: 1%;
+    @include gus_label_like;
   }
 
 }

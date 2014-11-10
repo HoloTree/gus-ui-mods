@@ -56,3 +56,10 @@
     -webkit-box-shadow: none;
   }
 }
+
+@mixin gus_label_like() {
+  background-color:  $accent2;
+  color: $white;
+  padding: 1%;
+  margin: 1%;
+}
