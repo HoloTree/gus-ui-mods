@@ -15,12 +15,9 @@
   #ht-sub-menu-button {
     z-index: 103;
     position: absolute;
-    top: 15px;
-    border: 0;
     text-indent: 200%;
     overflow: hidden;
     top:0;
-    left:-5px;
     border-radius: 3px;
     background-size: 80%;
     width: 30px;
@@ -29,7 +26,6 @@
     transition: all 400ms ease;
     &.expanded {transform: rotate(90deg); }
     background-color: $highlight2;
-    border: 0;
     padding: 4px;
     &:before {
       font-family: FontAwesome;

@@ -330,3 +330,31 @@ p.pods-submit {
   }
 
 }
+
+.comment {
+  background: white;
+  margin: 1%;
+  padding: 1%;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  span.date {
+    width: 100%;
+    display: block;
+  }
+
+  .comment-content {
+    padding: 0 1% 1%;
+    margin: 2%;
+  }
+
+  .comment-meta span {
+    background-color:  $accent2;
+    color: $white;
+    padding: 1%;
+    margin: 1%;
+  }
+}
+

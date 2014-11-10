@@ -5350,12 +5350,9 @@ th.hide-for-touch {
   #ht-sub-menu #ht-sub-menu-button {
     z-index: 103;
     position: absolute;
-    top: 15px;
-    border: 0;
     text-indent: 200%;
     overflow: hidden;
     top: 0;
-    left: -5px;
     border-radius: 3px;
     background-size: 80%;
     width: 30px;
@@ -5363,7 +5360,6 @@ th.hide-for-touch {
     outline: none;
     transition: all 400ms ease;
     background-color: #efc771;
-    border: 0;
     padding: 4px; }
     #ht-sub-menu #ht-sub-menu-button.expanded {
       transform: rotate(90deg); }
@@ -5709,6 +5705,25 @@ p.pods-submit {
   padding: 1% 0;
   margin: 1% 0; }
   #group-members-view #group-member-details {
+    background-color: #c88e4a;
+    color: #f4d99f;
+    padding: 1%;
+    margin: 1%; }
+
+.comment {
+  background: white;
+  margin: 1%;
+  padding: 1%; }
+  .comment img {
+    width: 24px;
+    height: 24px; }
+  .comment span.date {
+    width: 100%;
+    display: block; }
+  .comment .comment-content {
+    padding: 0 1% 1%;
+    margin: 2%; }
+  .comment .comment-meta span {
     background-color: #c88e4a;
     color: #f4d99f;
     padding: 1%;
