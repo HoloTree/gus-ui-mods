@@ -45,16 +45,20 @@
   color: $white;
 }
 
+@mixin gus_focus() {
+  &:active, &:hover, &:focus {
+    text-shadow: none;
+    -webkit-box-shadow: 0 0 10px rgba(251, 251, 251, 1);
+    border-color: #fbfbfb;
+    box-shadow: 0 0 10px rgba(251, 251, 251, 1);
+  }
+}
 @mixin submit-button() {
   @include gus_button;
   text-shadow: none;
   box-shadow: none;
   -webkit-box-shadow: none;
-  &:active, &:hover, &:focus {
-    text-shadow: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-  }
+  @include gus_focus;
 }
 
 @mixin gus_label_like() {
@@ -63,3 +67,5 @@
   padding: 1%;
   margin: 1%;
 }
+
+

@@ -5682,8 +5682,9 @@ input[type=submit], input[type=submit] .input-button {
     color: white; }
   input[type=submit]:active, input[type=submit]:hover, input[type=submit]:focus, input[type=submit] .input-button:active, input[type=submit] .input-button:hover, input[type=submit] .input-button:focus {
     text-shadow: none;
-    box-shadow: none;
-    -webkit-box-shadow: none; }
+    -webkit-box-shadow: 0 0 10px #fbfbfb;
+    border-color: #fbfbfb;
+    box-shadow: 0 0 10px #fbfbfb; }
 
 p.pods-submit {
   margin-right: 10px; }
@@ -5731,3 +5732,32 @@ p.pods-submit {
 
 .discussion-modal {
   margin: 1%; }
+
+.caldera-grid .control-label {
+  width: 23.6%;
+  margin-right: 14.6%;
+  background-color: #c88e4a;
+  color: #f4d99f;
+  text-align: center; }
+
+select#fld_738259_1 {
+  background-color: #c88e4a;
+  color: #f4d99f;
+  padding-left: 1%; }
+  select#fld_738259_1:active, select#fld_738259_1:hover, select#fld_738259_1:focus {
+    text-shadow: none;
+    -webkit-box-shadow: 0 0 10px #fbfbfb;
+    border-color: #fbfbfb;
+    box-shadow: 0 0 10px #fbfbfb; }
+
+select:active, select:hover, select:focus {
+  text-shadow: none;
+  -webkit-box-shadow: 0 0 10px #fbfbfb;
+  border-color: #fbfbfb;
+  box-shadow: 0 0 10px #fbfbfb; }
+
+#breadcrumbs font:active, #breadcrumbs font:hover, #breadcrumbs font:focus, #breadcrumbs img:active, #breadcrumbs img:hover, #breadcrumbs img:focus {
+  text-shadow: none;
+  -webkit-box-shadow: 0 0 10px #fbfbfb;
+  border-color: #fbfbfb;
+  box-shadow: 0 0 10px #fbfbfb; }

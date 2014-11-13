@@ -355,3 +355,25 @@ p.pods-submit {
 .discussion-modal {
   margin: 1%;
 }
+
+.caldera-grid .control-label {
+  @include gus_label;
+}
+
+select#fld_738259_1 {
+  background-color:  $accent2;
+  color: $white;
+  padding-left: 1%;
+  @include gus_focus;
+}
+
+select {
+  @include gus_focus;
+}
+
+#breadcrumbs {
+  font, img{
+    @include gus_focus;
+  }
+}
+
