@@ -24,7 +24,12 @@
     height: 30px;
     outline: none;
     transition: all 400ms ease;
-    &.expanded {transform: rotate(90deg); }
+    &.expanded {
+      transform: rotate(90deg);
+      background-image: url('https://raw.githubusercontent.com/HoloTree/gus-ui-mods/master/assets/img/ht-logo-tree-only-white-50.png?token=AB5uRyYnjl9QHAbPLkG9KQh2rF2CtpvWks5Ubo5iwA%3D%3D' );
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
     background-color: $highlight2;
     padding: 4px;
     &:before {
