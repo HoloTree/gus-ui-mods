@@ -111,7 +111,7 @@ a {
 }
 
 #holotree-dms-content {
- background: $accent2;
+ background: $highlight2;
 }
 
 
@@ -136,7 +136,7 @@ a {
 
 ul.tabs.vertical {
   border-right-width: 0px;
-  background-color: $highlight2;
+  background-color: $accent2;
 }
 
 body {
@@ -377,4 +377,3 @@ select {
     @include gus_focus;
   }
 }
-

@@ -5496,7 +5496,7 @@ a {
   color: #f4d99f; }
 
 #holotree-dms-content {
-  background: #c88e4a; }
+  background: #efc771; }
 
 @media only screen and (min-width: 40.063em) {
   #tabs .content {
@@ -5512,7 +5512,12 @@ a {
 
 ul.tabs.vertical {
   border-right-width: 0px;
-  background-color: #efc771; }
+  background-color: #c88e4a; }
+  ul.tabs.vertical .active {
+    border-color: #efc771;
+    border-width: 0 1px 0 0; }
+  ul.tabs.vertical li:last-child a:hover {
+    border-bottom: 1px; }
 
 body {
   background-color: #5a180a; }
