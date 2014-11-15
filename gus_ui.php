@@ -218,6 +218,16 @@ function gus_ui_login_style() {
 			}
 		}
 
+		h1#login-extra-title {
+			padding-top: 10px;
+			text-align: center;
+		}
+
+		h3#login-tagline {
+			text-align: center;
+			padding-top: 10px;
+		}
+
 		<?php
 			if ( $registration ) : ?>
 				#login {
@@ -247,6 +257,7 @@ function gus_ui_login_style() {
 				p.message.register .button:first-child {
 					float:right;
 				}
+
 
 		<?php endif; ?>
 
