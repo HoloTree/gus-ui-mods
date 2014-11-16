@@ -123,7 +123,7 @@ add_action( 'login_enqueue_scripts', 'gus_ui_login_style'  );
 function gus_ui_login_style() {
 
 	$logo = GUS_UI_IMG_URL . 'ht-logo-square-full.png';
-	$registration = pods_v_sanitized( 'action')
+	$registration = pods_v_sanitized( 'action' );
 ?>
 	<style type="text/css">
 		.login h1 a {
@@ -218,6 +218,31 @@ function gus_ui_login_style() {
 			}
 		}
 
+		div#extra-login-inside {
+			width: 320px; height: 50%;
+			overflow: auto;
+			margin: 1% auto auto auto;
+			background: #5a180a;
+			padding: 1%;
+			color: #EFC771;
+		}
+
+		div#extra-login {
+			position: relative;
+			margin-bottom: -10px;
+		}
+		div#extra-login p {
+			text-align: center;
+			margin: 5% 1% 1% 1%;
+		}
+
+		@media only screen and (min-width: 40em) {
+			div#extra-login {
+				position: relative;
+				margin-bottom: -50px;
+			}
+		}
+
 		h1#login-extra-title {
 			padding-top: 10px;
 			text-align: center;
@@ -226,6 +251,14 @@ function gus_ui_login_style() {
 		h3#login-tagline {
 			text-align: center;
 			padding-top: 10px;
+		}
+
+		div#extra-login-inside p a {
+			color: #EFC771;
+		}
+
+		div#extra-login-inside p a:hover {
+			color: white;
 		}
 
 		<?php
