@@ -32,6 +32,11 @@
   @include ht-border( $white );
 }
 
+@mixin gus_the_1_percent() {
+  padding: 1%;
+  margin: 1%;
+}
+
 @mixin gus_label() {
   @include width-golden-sixth;
   margin-right: percentage( $g12 );
@@ -64,8 +69,8 @@
 @mixin gus_label_like() {
   background-color:  $accent2;
   color: $white;
-  padding: 1%;
-  margin: 1%;
+  @include gus_the_1_percent;
 }
+
 
 

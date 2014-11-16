@@ -330,8 +330,7 @@ p.pods-submit {
 
 .comment {
   background: white;
-  margin: 1%;
-  padding: 1%;
+  @include gus_the_1_percent;
   img {
     width: 24px;
     height: 24px;
@@ -380,8 +379,7 @@ select {
 
 .notification-preview {
   min-height: 55px;
-  padding: 1%;
-  margin: 1%;
+  @include gus_the_1_percent;
   background-color: #FFF;
   .message-subject {
     @include gus_label_like;
@@ -398,7 +396,6 @@ select {
 
 .notification {
   .message-text {
-    padding: 1%;
-    margin: 1%;
+    @include gus_the_1_percent;
   }
 }
