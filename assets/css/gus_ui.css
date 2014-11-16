@@ -5360,19 +5360,15 @@ th.hide-for-touch {
     outline: none;
     transition: all 400ms ease;
     background-color: #efc771;
-    padding: 4px; }
+    padding: 4px;
+    background-image: url("http://f.cl.ly/items/1U2c3b1215383h3a2T2r/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 50% center; }
     #ht-sub-menu #ht-sub-menu-button.expanded {
       transform: rotate(90deg);
       background-image: url("https://raw.githubusercontent.com/HoloTree/gus-ui-mods/master/assets/img/ht-logo-tree-only-white-50.png?token=AB5uRyYnjl9QHAbPLkG9KQh2rF2CtpvWks5Ubo5iwA%3D%3D");
       background-repeat: no-repeat;
       background-position: 50%; }
-    #ht-sub-menu #ht-sub-menu-button:before {
-      font-family: FontAwesome;
-      top: 0;
-      left: -5px;
-      content: "\f0c9";
-      color: #000;
-      font-size: 1.5em; }
   #ht-sub-menu a {
     display: block;
     background: #c88e4a;
@@ -5720,8 +5716,8 @@ p.pods-submit {
 
 .comment {
   background: white;
-  margin: 1%;
-  padding: 1%; }
+  padding: 1%;
+  margin: 1%; }
   .comment img {
     width: 24px;
     height: 24px; }
