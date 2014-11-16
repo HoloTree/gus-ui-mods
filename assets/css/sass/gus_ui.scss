@@ -377,3 +377,28 @@ select {
     @include gus_focus;
   }
 }
+
+.notification-preview {
+  min-height: 55px;
+  padding: 1%;
+  margin: 1%;
+  background-color: #FFF;
+  .message-subject {
+    @include gus_label_like;
+  }
+
+
+}
+
+#notifications-header {
+  .button {
+    @include gus_focus;
+  }
+}
+
+.notification {
+  .message-text {
+    padding: 1%;
+    margin: 1%;
+  }
+}

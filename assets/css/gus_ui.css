@@ -5513,11 +5513,6 @@ a {
 ul.tabs.vertical {
   border-right-width: 0px;
   background-color: #c88e4a; }
-  ul.tabs.vertical .active {
-    border-color: #efc771;
-    border-width: 0 1px 0 0; }
-  ul.tabs.vertical li:last-child a:hover {
-    border-bottom: 1px; }
 
 body {
   background-color: #5a180a; }
@@ -5773,3 +5768,24 @@ select:active, select:hover, select:focus {
   -webkit-box-shadow: 0 0 10px #fbfbfb;
   border-color: #fbfbfb;
   box-shadow: 0 0 10px #fbfbfb; }
+
+.notification-preview {
+  min-height: 55px;
+  padding: 1%;
+  margin: 1%;
+  background-color: #FFF; }
+  .notification-preview .message-subject {
+    background-color: #c88e4a;
+    color: #f4d99f;
+    padding: 1%;
+    margin: 1%; }
+
+#notifications-header .button:active, #notifications-header .button:hover, #notifications-header .button:focus {
+  text-shadow: none;
+  -webkit-box-shadow: 0 0 10px #fbfbfb;
+  border-color: #fbfbfb;
+  box-shadow: 0 0 10px #fbfbfb; }
+
+.notification .message-text {
+  padding: 1%;
+  margin: 1%; }
