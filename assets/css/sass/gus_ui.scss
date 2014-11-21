@@ -412,3 +412,21 @@ input[type=text], input[type=password], input[type=date], input[type=datetime], 
   border-left: 1px solid #F5F5DC;
   border-right: 1px solid #F5F5DC;
 }
+
+
+p#invite-code-message {
+  @include gus_label_like;
+  &.error{
+    background-color: $secondary;
+    color: $white;
+  }
+  &.success{
+    background-color: $accent2;
+    color: $white;
+  }
+  &.in-progress {
+    background-color: $primary;
+    color: $white;
+  }
+  
+}

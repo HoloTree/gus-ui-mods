@@ -6211,3 +6211,18 @@ input[type=text], input[type=password], input[type=date], input[type=datetime], 
 .pods-form-ui-field-type-wysiwyg {
   border-left: 1px solid #F5F5DC;
   border-right: 1px solid #F5F5DC; }
+
+p#invite-code-message {
+  background-color: #c88e4a;
+  color: #f4d99f;
+  padding: 1%;
+  margin: 1%; }
+  p#invite-code-message.error {
+    background-color: #5a180a;
+    color: #f4d99f; }
+  p#invite-code-message.success {
+    background-color: #c88e4a;
+    color: #f4d99f; }
+  p#invite-code-message.in-progress {
+    background-color: black;
+    color: #f4d99f; }
