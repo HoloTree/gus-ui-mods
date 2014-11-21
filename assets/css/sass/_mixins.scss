@@ -46,7 +46,7 @@
 }
 
 @mixin gus_button() {
-  @include button($button-med, $accent2, false, false, false, false, false, $accent, null, false);
+  @include button($button-med, $accent2, false, false, false, false, null, $accent, false );
   color: $white;
 }
 

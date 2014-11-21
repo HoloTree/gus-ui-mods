@@ -28,6 +28,7 @@ class gus_ui_mods_setup {
 		//wp_enqueue_script( 'gus', trailingslashit( GUS_UI_URL) . $gus_js, array( 'jquery', 'foundation' ), $version, true );
 		$url = trailingslashit( GUS_UI_URL ).'vendor/zurb/foundation/js/foundation/';
 
+		$version = '5.4.6';
 		//@todo minify foundation
 		wp_enqueue_script( 'foundation', $url.'foundation.js', array( 'jquery' ), $version, true );
 		foreach( $this->foundation() as $name ) {
@@ -38,7 +39,12 @@ class gus_ui_mods_setup {
 	}
 
 	function foundation() {
-		return array( 'accordion', 'tab', 'alert', 'reveal' );
+		return array(
+			//'accordion',
+			'tab',
+			//'alert',
+			'reveal'
+		);
 	}
 
 
