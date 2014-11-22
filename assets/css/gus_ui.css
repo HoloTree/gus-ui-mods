@@ -6212,17 +6212,17 @@ input[type=text], input[type=password], input[type=date], input[type=datetime], 
   border-left: 1px solid #F5F5DC;
   border-right: 1px solid #F5F5DC; }
 
-p#invite-code-message {
+p#invite-code-message, #new-org-message {
   background-color: #c88e4a;
   color: #f4d99f;
   padding: 1%;
   margin: 1%; }
-  p#invite-code-message.error {
+  p#invite-code-message.error, #new-org-message.error {
     background-color: #5a180a;
     color: #f4d99f; }
-  p#invite-code-message.success {
+  p#invite-code-message.success, #new-org-message.success {
     background-color: #c88e4a;
     color: #f4d99f; }
-  p#invite-code-message.in-progress {
+  p#invite-code-message.in-progress, #new-org-message.in-progress {
     background-color: black;
     color: #f4d99f; }
