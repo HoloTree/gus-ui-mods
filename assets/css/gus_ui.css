@@ -2143,13 +2143,13 @@ button, .button {
   button:hover, button:focus, .button:hover, .button:focus {
     color: #f4d99f; }
   button.secondary, .button.secondary {
-    background-color: #5a180a;
-    border-color: #481308;
-    color: #f4d99f; }
+    background-color: beige;
+    border-color: #e0e094;
+    color: #333333; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #481308; }
+      background-color: #e0e094; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      color: #f4d99f; }
+      color: #333333; }
   button.success, .button.success {
     background-color: #faebcd;
     border-color: #f0cb7c;
@@ -2228,18 +2228,18 @@ button, .button {
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: black; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-      background-color: #5a180a;
-      border-color: #481308;
-      color: #f4d99f;
+      background-color: beige;
+      border-color: #e0e094;
+      color: #333333;
       cursor: default;
       opacity: 0.7;
       box-shadow: none; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #481308; }
+        background-color: #e0e094; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        color: #f4d99f; }
+        color: #333333; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #5a180a; }
+        background-color: beige; }
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #faebcd;
       border-color: #f0cb7c;
@@ -3460,8 +3460,8 @@ label.error {
     background-color: #faebcd;
     color: #333333; }
   .label.secondary {
-    background-color: #5a180a;
-    color: #f4d99f; }
+    background-color: beige;
+    color: #333333; }
   .label.info {
     background-color: #a0d3e8;
     color: #333333; }
@@ -4214,13 +4214,13 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: #f4d99f; }
       .top-bar-section ul li > a.button.secondary {
-        background-color: #5a180a;
-        border-color: #481308;
-        color: #f4d99f; }
+        background-color: beige;
+        border-color: #e0e094;
+        color: #333333; }
         .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-          background-color: #481308; }
+          background-color: #e0e094; }
         .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-          color: #f4d99f; }
+          color: #333333; }
       .top-bar-section ul li > a.button.success {
         background-color: #faebcd;
         border-color: #f0cb7c;
@@ -4257,13 +4257,13 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
         color: #f4d99f; }
       .top-bar-section ul li > button.secondary {
-        background-color: #5a180a;
-        border-color: #481308;
-        color: #f4d99f; }
+        background-color: beige;
+        border-color: #e0e094;
+        color: #333333; }
         .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-          background-color: #481308; }
+          background-color: #e0e094; }
         .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-          color: #f4d99f; }
+          color: #333333; }
       .top-bar-section ul li > button.success {
         background-color: #faebcd;
         border-color: #f0cb7c;
@@ -4791,10 +4791,10 @@ code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: normal;
   color: #333333;
-  background-color: #f3a290;
+  background-color: #fcfcf5;
   border-width: 1px;
   border-style: solid;
-  border-color: #ef846d;
+  border-color: #f1f1ce;
   padding: 0.125rem 0.3125rem 0.0625rem; }
 
 /* Lists */
@@ -5078,7 +5078,7 @@ blockquote p {
   height: 2.8125rem;
   display: block;
   padding: 0;
-  color: #5a180a;
+  color: beige;
   position: relative;
   transform: translate3d(0, 0, 0); }
   .tab-bar .menu-icon span::after {
@@ -5089,10 +5089,10 @@ blockquote p {
     top: 50%;
     margin-top: -0.5rem;
     left: 0.90625rem;
-    box-shadow: 0 0px 0 1px #5a180a, 0 7px 0 1px #5a180a, 0 14px 0 1px #5a180a;
+    box-shadow: 0 0px 0 1px beige, 0 7px 0 1px beige, 0 14px 0 1px beige;
     width: 1rem; }
   .tab-bar .menu-icon span:hover:after {
-    box-shadow: 0 0px 0 1px #3f1107, 0 7px 0 1px #3f1107, 0 14px 0 1px #3f1107; }
+    box-shadow: 0 0px 0 1px #d6d66f, 0 7px 0 1px #d6d66f, 0 14px 0 1px #d6d66f; }
 
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
@@ -5160,7 +5160,7 @@ ul.off-canvas-list {
   ul.off-canvas-list li a {
     display: block;
     padding: 0.66667rem;
-    color: #5a180a;
+    color: beige;
     border-bottom: 1px solid #262626;
     transition: background 300ms ease; }
     ul.off-canvas-list li a:hover {
@@ -5878,7 +5878,7 @@ h1.site-title a, h1.site-title a:visited {
   padding-top: 24px;
   list-style: none; }
   .left-off-canvas-menu ul a, .right-off-canvas-menu ul a {
-    color: #5a180a; }
+    color: beige; }
 
 #comments {
   padding-top: 48px; }
@@ -5923,7 +5923,7 @@ ul.tabs.vertical {
   background-color: #c88e4a; }
 
 body {
-  background-color: #5a180a; }
+  background-color: beige; }
 
 .tabs-content .content, form, .ht_dms_template {
   overflow: scroll; }
