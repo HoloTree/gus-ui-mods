@@ -72,5 +72,9 @@
   @include gus_the_1_percent;
 }
 
-
+@mixin gus_content_area() {
+  background-color: $background;
+  padding: 5%;
+  margin-bottom: 5%;
+}
 

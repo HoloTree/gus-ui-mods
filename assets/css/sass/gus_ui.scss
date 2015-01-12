@@ -433,3 +433,7 @@ p#invite-code-message, #new-org-message {
   }
   
 }
+
+.ht-dms-partial {
+ @include gus_content_area;
+}
