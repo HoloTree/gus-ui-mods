@@ -700,6 +700,20 @@ object {
   background-color: #5a180a;
   color: #f4d99f; }
 
+.baldrick-modal-wrap {
+  top: 25%;
+  right: 25%;
+  width: 50%;
+  height: 50%;
+  background-color: #5a180a;
+  color: #f4d99f; }
+
+@media only screen and (max-width: 40em) {
+  .baldrick-modal-wrap {
+    top: 5%;
+    right: 5%;
+    width: 75%;
+    height: 75%; } }
 meta.foundation-version {
   font-family: "/{{VERSION}}/"; }
 
