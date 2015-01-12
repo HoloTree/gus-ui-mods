@@ -1,17 +1,15 @@
 /*! Gus UI - v0.1.0
  * http://holotree.com
- * Copyright (c) 2014; * Licensed GPLv2+ */
+ * Copyright (c) 2015; * Licensed GPLv2+ */
+/**
+ * Gus UI
+ * http://holotree.com
+ *
+ * Copyright (c) 2014 Josh Pollock
+ * Licensed under the GPLv2+ license.
+ */
+
 jQuery(document).ready(function($) {
-    //init foundation
-    $( document ).foundation();
-
-    tabHeight();
-    window.addEventListener( 'resize', tabHeight );
-
-    $( document ).ajaxComplete(function() {
-        //tabHeight();
-    });
-
 
     function tabHeight() {
         var width = $(document).width();
@@ -20,12 +18,12 @@ jQuery(document).ready(function($) {
             var maxHeight = -1;
 
 
-            if (undefined != paginatedViews) {
+            if (undefined !== paginatedViews) {
                 $.each(paginatedViews, function (index, value) {
                     if ($(value).length > 0) {
                         maxHeight = maxHeight > $(value).height() ? maxHeight : $(value).height();
                     }
-                    ;
+
                 });
             }
 
@@ -55,5 +53,12 @@ jQuery(document).ready(function($) {
     $( '#ht-sub-menu-button' ).click(function() {
         $( this ).toggleClass( 'expanded' ).siblings( 'div' ).slideToggle();
     });
+
+    //init foundation
+    $( document ).foundation();
+
+    tabHeight();
+    window.addEventListener( 'resize', tabHeight );
+
 
 });

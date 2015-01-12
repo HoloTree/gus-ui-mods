@@ -1,3 +1,5 @@
+/** global jQuery **/
+
 /**
  * Gus UI
  * http://holotree.com
@@ -7,16 +9,6 @@
  */
 
 jQuery(document).ready(function($) {
-    //init foundation
-    $( document ).foundation();
-
-    tabHeight();
-    window.addEventListener( 'resize', tabHeight );
-
-    $( document ).ajaxComplete(function() {
-        //tabHeight();
-    });
-
 
     function tabHeight() {
         var width = $(document).width();
@@ -25,12 +17,12 @@ jQuery(document).ready(function($) {
             var maxHeight = -1;
 
 
-            if (undefined != paginatedViews) {
+            if (undefined !== paginatedViews) {
                 $.each(paginatedViews, function (index, value) {
                     if ($(value).length > 0) {
                         maxHeight = maxHeight > $(value).height() ? maxHeight : $(value).height();
                     }
-                    ;
+
                 });
             }
 
@@ -60,5 +52,12 @@ jQuery(document).ready(function($) {
     $( '#ht-sub-menu-button' ).click(function() {
         $( this ).toggleClass( 'expanded' ).siblings( 'div' ).slideToggle();
     });
+
+    //init foundation
+    $( document ).foundation();
+
+    tabHeight();
+    window.addEventListener( 'resize', tabHeight );
+
 
 });
