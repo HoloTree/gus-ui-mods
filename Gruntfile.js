@@ -38,7 +38,12 @@ module.exports = function( grunt ) {
 				eqnull:  true,
 				globals: {
 					exports: true,
-					module:  false
+					module:  false,
+					jQuery: true,
+					window: true,
+					document: true,
+					paginatedViews: true,
+					tabHeight: true
 				}
 			}		
 		},
