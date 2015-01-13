@@ -165,13 +165,6 @@ div#holotree-dms-title-section {
 }
 
 
-.consensus-view {
-  padding: 4px;
-  margin: 12px 4px;
-  @include white-border;
-  h5{ text-align: center; }
-}
-
 #ht-dms-third-element {
   background-color: $white;
   overflow:scroll;
@@ -436,4 +429,49 @@ p#invite-code-message, #new-org-message {
 
 .ht-dms-partial {
  @include gus_content_area;
+}
+
+.consensus-view {
+  padding: 4px;
+  margin: 12px 4px;
+  @include white-border;
+  h5{ text-align: center; }
+}
+
+
+.decision-preview {
+  .consensus-view {
+    padding: 0;
+    margin: 0;
+  }
+  #consensus-views-chooser li {
+    text-align:center;
+  }
+
+
+  h3 {
+    display: inline;
+    float: left;
+  }
+  .consensus-view-button {
+    display: inline;
+    float:right;
+  }
+
+  @media #{$small-only} {
+    h3{
+      display:block;
+      float:none;
+    }
+    .consensus-view-button {
+      display: inline;
+      float:left;
+    }
+
+  }
+
+}
+
+.clear {
+  clear: both;
 }

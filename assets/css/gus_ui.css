@@ -5977,15 +5977,6 @@ div#holotree-dms-title-section h2.entry-title {
   div#holotree-dms-title-section {
     padding-top: 10px; } }
 
-.consensus-view {
-  padding: 4px;
-  margin: 12px 4px;
-  border: 1px solid #f4d99f;
-  -webkit-border-radius: 0px;
-  border-radius: 0px; }
-  .consensus-view h5 {
-    text-align: center; }
-
 #ht-dms-third-element {
   background-color: #f4d99f;
   overflow: scroll; }
@@ -6245,3 +6236,34 @@ p#invite-code-message, #new-org-message {
   background-color: beige;
   padding: 5%;
   margin-bottom: 5%; }
+
+.consensus-view {
+  padding: 4px;
+  margin: 12px 4px;
+  border: 1px solid #f4d99f;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+  .consensus-view h5 {
+    text-align: center; }
+
+.decision-preview .consensus-view {
+  padding: 0;
+  margin: 0; }
+.decision-preview #consensus-views-chooser li {
+  text-align: center; }
+.decision-preview h3 {
+  display: inline;
+  float: left; }
+.decision-preview .consensus-view-button {
+  display: inline;
+  float: right; }
+@media only screen and (max-width: 40em) {
+  .decision-preview h3 {
+    display: block;
+    float: none; }
+  .decision-preview .consensus-view-button {
+    display: inline;
+    float: left; } }
+
+.clear {
+  clear: both; }
