@@ -5807,77 +5807,28 @@ th.hide-for-touch {
     #ht-sub-menu a:hover, #ht-sub-menu a:active, #ht-sub-menu a:focus {
       background: #edc263; }
 
-.orgName, .gruName, .decName {
-  font-family: "Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
-  color: #000000;
-  text-shadow: 1px 0 #000000;
-  letter-spacing: 1px;
-  font-weight: bold !important;
-  font-size: 14px !important;
-  vertical-align: middle;
-  background-color: rgba(244, 217, 159, 0.5); }
-
 #breadcrumbs {
   background: #f4d99f;
-  margin-bottom: 4px;
-  /*if screen less than 665*/ }
-  #breadcrumbs .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size: 2em;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    color: #ffffff; }
-  #breadcrumbs .fa-university:before, #breadcrumbs .fa-institution:before, #breadcrumbs .fa-bank:before {
-    content: "\f19c";
-    color: #e2a219;
-    z-index: -1000;
-    padding-left: 10px; }
-  #breadcrumbs .fa-university:before {
-    margin: 0 -52px 0 21px; }
-  #breadcrumbs .fa-group:before, #breadcrumbs .fa-users:before {
-    content: "\f0c0";
-    color: #e2a219;
-    z-index: -1000;
-    padding-left: 4px; }
-  #breadcrumbs .fa-group:before {
-    margin: 0 -120px 0 92px;
-    padding-left: 0 !important; }
-  #breadcrumbs .fa-check:before {
-    content: "\f00c";
-    color: #e2a219;
-    margin: 0 -110px 0 38px;
-    z-index: -1000; }
-  #breadcrumbs div {
-    float: left; }
-  #breadcrumbs span {
-    margin: 4px 0 7px 0;
-    padding-right: 10px; }
-  #breadcrumbs span.gru {
-    padding-right: 3px !important; }
-  #breadcrumbs img.brand {
+  margin-bottom: 4px; }
+  #breadcrumbs .breadcrumb-part {
+    display: inline;
     float: left;
-    margin: 10px 0 5px 10px; }
-  #breadcrumbs .in {
-    padding: 5px 15px 0 15px;
-    border-right: dotted #330e06 2px;
-    background: #f4d99f; }
-  @media only screen and (max-width: 40em) {
-    #breadcrumbs .fa {
-      font-size: 1.5em !important; }
-    #breadcrumbs .fa-institution:before, #breadcrumbs .fa-bank:before, #breadcrumbs .fa-university:before, #breadcrumbs .fa-group:before, #breadcrumbs .fa-users:before, #breadcrumbs .fa-check:before {
-      margin: 0px 0px 0px 0px; }
-    #breadcrumbs font#breadNames, #breadcrumbs font#breadGroup, #breadcrumbs font#breadDecid {
-      display: none !important; }
-    #breadcrumbs #site-logo-home-link a img {
-      padding: 0px 5px 0 5px; }
-    #breadcrumbs #site-logo-home-link {
-      padding: 1px; } }
+    margin-left: 2%;
+    font-size: 2em;
+    background-color: #5a180a;
+    color: #f4d99f;
+    padding: 10px 20px; }
+    #breadcrumbs .breadcrumb-part a:active, #breadcrumbs .breadcrumb-part a:hover, #breadcrumbs .breadcrumb-part a:focus {
+      text-shadow: none;
+      -webkit-box-shadow: 0 0 10px #fbfbfb;
+      border-color: #fbfbfb;
+      box-shadow: 0 0 10px #fbfbfb; }
+    #breadcrumbs .breadcrumb-part a:hover {
+      padding: 4px;
+      background: whitesmoke; }
+  #breadcrumbs #site-logo-home-link {
+    margin-left: 0;
+    background: none; }
 
 body *, .ht_dms_template {
   overflow: hidden; }
@@ -5911,11 +5862,6 @@ a {
   @media only screen and (max-width: 40em) {
     #holotree-dms {
       padding-top: 5px; } }
-
-#holotree-dms-title-section a {
-  color: #f4d99f; }
-#holotree-dms-title-section a:hover {
-  color: #f4d99f; }
 
 #holotree-dms-content {
   background: #efc771; }
