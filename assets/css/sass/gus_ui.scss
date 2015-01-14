@@ -438,16 +438,16 @@ p#invite-code-message, #new-org-message {
   h5{ text-align: center; }
 }
 
+#consensus-views-chooser li {
+  text-align:center;
+}
+
 
 .decision-preview {
   .consensus-view {
     padding: 0;
     margin: 0;
   }
-  #consensus-views-chooser li {
-    text-align:center;
-  }
-
 
   h3 {
     display: inline;

@@ -6246,11 +6246,12 @@ p#invite-code-message, #new-org-message {
   .consensus-view h5 {
     text-align: center; }
 
+#consensus-views-chooser li {
+  text-align: center; }
+
 .decision-preview .consensus-view {
   padding: 0;
   margin: 0; }
-.decision-preview #consensus-views-chooser li {
-  text-align: center; }
 .decision-preview h3 {
   display: inline;
   float: left; }
