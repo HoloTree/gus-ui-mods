@@ -696,9 +696,24 @@ object {
 .infinity-end.neverending .site-footer {
   display: block; }
 
-.caldera-grid .alert.alert-success {
-  background-color: #5a180a;
-  color: #f4d99f; }
+.caldera-grid {
+  background-color: beige;
+  padding: 5%;
+  margin-bottom: 5%;
+  padding: 0;
+  border: 1px solid #5a180a; }
+  .caldera-grid .alert.alert-success {
+    background-color: #5a180a;
+    color: #f4d99f; }
+  .caldera-grid .control-label {
+    width: 100% !important; }
+  .caldera-grid span.help-block {
+    margin-top: 4px;
+    background-color: white;
+    padding: 4%; }
+  .caldera-grid .radio {
+    padding-left: 12px;
+    background-color: white; }
 
 .baldrick-modal-wrap {
   top: 25%;

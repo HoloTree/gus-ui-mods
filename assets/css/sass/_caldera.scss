@@ -1,6 +1,26 @@
 .caldera-grid {
+  @include gus_content_area;
+  padding: 0;
+  border: 1px solid $secondary;
   .alert.alert-success {
-    background-color: $secondary;
-    color: $white;
+      background-color: $secondary;
+      color: $white;
   }
+
+  .control-label {
+      width: 100% !important;
+  }
+
+  span.help-block {
+    margin-top: 4px;
+    background-color: white;
+    padding: 4%;
+  }
+
+  .radio {
+    padding-left: 12px;
+    background-color: white;
+  }
+
 }
+
